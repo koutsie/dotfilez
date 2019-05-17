@@ -1,2 +1,6 @@
 #Aliases
 alias power='sudo bash $HOME/Scripts/powermode.sh'
+alias cd..='cd ..'
+alias pdw="pwd"
+alias grep='grep --color=auto'
+alias update='sudo yay -Sy'

@@ -1,0 +1,2 @@
+#Aliases
+alias power='sudo bash $HOME/Scripts/powermode.sh'

@@ -3,8 +3,10 @@ export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33'
 export PS1="[\e[1;34m\u@\h]\e[0m:\w\\$ \[$(tput sgr0)\]\e[0m"
 
 #Information line:
-temp=$(curl -s wttr.in/oulu?format=3)
+airtemp=$(curl -s wttr.in/oulu?format=3)
 dateline=$(date +"%T")
 battery=$(upower -d | grep percentage | awk '{print $2;}' | head -1)
-echo $dateline // $temp
+echo -e "\e[92m $airtemp \e[39m"
 
+#An clock snitched from: https://0x0.st/s6D
+while sleep 1;do battery=$(upower -d | grep percentage | awk '{print $2;}' | head -1) tput sc;tput cup 0 $(($(tput cols)-18));echo -e "\e[94m`date +%r`\e[39m // \e[93m $battery \e[39m";tput rc;done &

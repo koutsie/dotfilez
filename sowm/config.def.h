@@ -3,7 +3,7 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]    = {"dmenu",      0};
+const char* menu[]    = {"dmenu_run",      0};
 const char* term[]    = {"xfce4-terminal",             0};
 const char* scrot[]   = {"/home/koutsie/Scripts/screenshot.sh",            0};
 const char* briup[]   = {"bri", "10", "+", 0};
@@ -45,5 +45,3 @@ static struct key keys[] = {
 };
 
 #endif
-
-

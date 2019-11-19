@@ -1,4 +1,3 @@
-<p align="center"> 
 <img src="https://i.ibb.co/jGMg3Ym/bootifull.png" />
 
 
@@ -31,7 +30,6 @@ Updated dotfiles this time with i3, sowm etc
 For nano: https://github.com/scopatz/nanorc
 
 For geany: `tango light` with `sourcecode variable bold`
-</p>
 
 ------
 

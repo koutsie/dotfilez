@@ -33,4 +33,6 @@ For nano i use: https://github.com/scopatz/nanorc
 
 wanna donate?
 
-[![donate3.md.png](https://s5.gifyu.com/images/donate3.md.png)](https://gifyu.com/image/vI0f)
+eth: ?0x02a17dbf3d15962150e4efe8f74e2491d733629f`
+
+[![donate3.th.png](https://s5.gifyu.com/images/donate3.th.png)](https://gifyu.com/image/vI0f)

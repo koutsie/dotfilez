@@ -29,6 +29,7 @@ Updated dotfiles this time with i3, sowm etc
 
 ## Editors:
 For nano: https://github.com/scopatz/nanorc
+
 For geany: `tango light` with `sourcecode variable bold`
 </p>
 

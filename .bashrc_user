@@ -9,3 +9,4 @@ echo -e "\e[95m $dateline \e[39m // \e[92m $airtemp \e[39m"
 
 #An clock snitched from: https://0x0.st/s6D
 while sleep 10;do battery=$(upower -d | grep percentage | awk '{print $2;}' | head -1); tput sc;tput cup 0 $(($(tput cols)-18));echo -e "\e[94m`date +%r`\e[39m // \e[93m $battery \e[39m";tput rc;done &
+printf "\n"

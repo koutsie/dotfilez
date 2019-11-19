@@ -4,3 +4,6 @@ alias cd..='cd ..'
 alias pdw="pwd"
 alias grep='grep --color=auto'
 alias update='sudo yay -Sy'
+alias vup='$HOME/Scripts/vol_up.sh'
+alias vdo='$HOME/Scripts/vol_down.sh'
+alias wallpaper='$HOME/Scripts/wallpaper.sh'

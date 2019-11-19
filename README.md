@@ -29,3 +29,8 @@ Updated dotfiles this time with i3, sowm etc
 
 For nano i use: https://github.com/scopatz/nanorc
 </p>
+
+
+wanna donate?
+
+[![donate3.md.png](https://s5.gifyu.com/images/donate3.md.png)](https://gifyu.com/image/vI0f)

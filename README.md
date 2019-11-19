@@ -1,5 +1,5 @@
 # dotfilez
-this what the cool kids doing
+Updated dotfiles this time with i3, sowm etc
 
 
 

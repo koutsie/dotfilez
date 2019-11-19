@@ -1,0 +1,12 @@
+/* All styles combined into one file */
+
+div.sidebar-2K8pFh
+{
+    width: 8px;
+    transition: width 0.5s;
+}
+
+div.sidebar-2K8pFh:hover
+{
+    width: 240px;
+}

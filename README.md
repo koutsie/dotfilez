@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="https://s5.gifyu.com/images/sowm.png" />
+<img src="https://i.ibb.co/jGMg3Ym/bootifull.png" />
 
 
 # dotfilez

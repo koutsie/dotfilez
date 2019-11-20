@@ -41,6 +41,7 @@ Install dotfilez:
 - imlib2
 - xfce4-terminal
 - sed
+- screen
 
 
 Wich you can easily install with *yay*: 

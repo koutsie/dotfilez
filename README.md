@@ -5,8 +5,9 @@
 Updated dotfiles this time with i3, sowm etc
 
 ## install:
-please note that everything is installed for /home/**koutsie**/ , not your current install.
+please note that everything is installed for `/home/`**`koutsie`**`/` , not your current install.
 i will get an propper installer when i get to it.
+
 `curl -fsSL https://git.io/Je6fO | bash`
 
 

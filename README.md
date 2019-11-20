@@ -2,10 +2,14 @@
 
 
 # dotfilez
+
 Updated dotfiles this time with i3, sowm etc
+
+
 
 ## install:
 Install deps:
+
 ```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2```
 
 Install dotfilez:
@@ -21,7 +25,7 @@ Install dotfilez:
 > Volume changing uses `pamixer` and only changes the current output, please make sure to edit as needed.
 
 
-> Wallpaper changer uses unsplash's url api, please make sure to change it to your liking (currently: `nature` & `water` tags are used).
+> Wallpaper changer uses unsplash's url api, please make sure to change it to your liking (currently: `nature` is used.).
 
 ## Default Layout
 ![Layout](./docs/dotfilez-layout.jpg)

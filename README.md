@@ -10,7 +10,7 @@ Updated dotfiles this time with i3, sowm etc
 ## install:
 Install deps:
 
-```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2```
+```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2 sed```
 
 Install dotfilez:
 
@@ -33,16 +33,19 @@ Install dotfilez:
 - pamixer
 - wget
 - curl
-- mpsyt
+- mpsyt (mps-youtube)
 - dunst
 - git
 - sowm
 - feh
 - imlib2
+- xfce4-terminal
+- sed
+
 
 Wich you can easily install with *yay*: 
 
-```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2```
+```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2 sed```
 
 
 ## Default Layout

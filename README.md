@@ -5,16 +5,15 @@
 Updated dotfiles this time with i3, sowm etc
 
 ## install:
-please note that everything is installed for **`/home/koutsie/`** , not your current install.
-i will get an propper installer when i get to it.
+Install deps:
+```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2```
 
-`curl -fsSL https://git.io/Je6fO | bash`
+Install dotfilez:
+
+```curl -fsSL https://git.io/Je6fO | bash```
 
 
 ### Notes:
-
-> Everything in `sowm` has been configured to work for me, so please do look around before complaining about stuff not working.
-
 
 > Brightness controls have been configured for an amdgpu laptop, please make sure to change those to match your own solution.
 

@@ -48,7 +48,7 @@ cp --verbose .bashrc_user /home/"$USER"/.bashrc_user
 echo getting sowm
 git clone https://github.com/dylanaraps/sowm sowm_source 
 cp --verbose sowm/config.def.h sowm_source/config.def.h
-echo entered direcotry sowm_source && cd sowm_source && make && sudo make install && cd .. && echo backing up from sowm_source
+echo entered direcotry sowm_source && cd sowm_source && make && sudo make clean install && cd .. && echo backing up from sowm_source
 
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop
 

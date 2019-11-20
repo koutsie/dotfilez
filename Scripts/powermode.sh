@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script should set your cpu governor
 #Set colours
 Pink=''
 Blue='\033[0;34m'

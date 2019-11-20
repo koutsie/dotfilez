@@ -1,6 +1,6 @@
-
 #!/bin/bash 
-
+# Minimal battery notifier
+# TODO: Add chargin detection & make this easier to read, it hurst my eyes.
 while :
 do
     current=$(cat /sys/class/power_supply/BAT1/capacity)

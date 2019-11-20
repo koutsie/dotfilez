@@ -26,6 +26,7 @@ Updated dotfiles this time with i3, sowm etc
 - curl
 - mpsyt
 - dunst
+- git
 
 ## Editors:
 For nano: https://github.com/scopatz/nanorc

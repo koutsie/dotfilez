@@ -1,4 +1,4 @@
 #!/bin/bash
 current=$(pamixer --get-volume)
-pamixer -d 15
+pamixer -d 10
 dunstify $current

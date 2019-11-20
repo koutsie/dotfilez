@@ -5,7 +5,9 @@
 # Requirements: 
 #              feh, wget, imlib2
 savelocation=/tmp/wall.jpg
-imgprovider=https://source.unsplash.com/1920x1080/?nature,water
+imgprovider=https://source.unsplash.com/1920x1080/?nature,trees
 
 wget -N  "$imgprovider" -O "$savelocation" 2> /dev/null
 feh --bg-fill "$savelocation"
+
+dunstify "New wallpaper set! $savelocation"

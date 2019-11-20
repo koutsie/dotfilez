@@ -27,10 +27,6 @@ Install dotfilez:
 
 > Wallpaper changer uses unsplash's url api, please make sure to change it to your liking (currently: `nature` is used.).
 
-## Default Layout
-![Layout](./docs/dotfilez-layout.jpg)
-
-
 
 ## Depencies/Configured programs so far:
 - flameshot
@@ -47,6 +43,46 @@ Install dotfilez:
 Wich you can easily install with *yay*: 
 
 ```yay -S flameshot pamixer wget curl mps-youtube dunst git feh imlib2```
+
+
+## Default Layout
+![Layout](./docs/dotfilez-layout.jpg)
+
+
+*NOTE: default modifier is __Super__*
+
+
+
+**Window Management**
+
+| combo                      | action                 |
+| -------------------------- | -----------------------|
+| `Mouse`                    | focus under cursor     |
+| `MOD4` + `Left Mouse`      | move window            |
+| `MOD4` + `Right Mouse`     | resize window          |
+| `MOD4` + `f`               | maximize toggle        |
+| `MOD4` + `c`               | center window          |
+| `MOD4` + `q`               | kill window            |
+| `MOD4` + `1-9`             | desktop swap           |
+| `MOD4` + `Shift` +`1-9`    | send window to desktop |
+| `MOD1` + `TAB` (*alt-tab*) | focus cycle            |
+
+------
+
+**Shortcuts**
+
+| combo                      | action                 |
+| -------------------------- | -----------------------|
+| `MOD4` + `p`                    | flameshot screenshot tool |
+| `MOD4` + `m`      | mpsyt            |
+| `MOD4` + `XF86_MonBrightnessUp`     | brightness up          |
+| `MOD4` + `XF86_MonBrightnessDown`               | brightness down        |
+| `MOD4` + `XF86_AudioRaiseVolume`               | volume up          |
+| `MOD4` + `XF86_AudioLowerVolume`               | volume down            |
+| `MOD4` + `w`             | get a new random wallpaper           |
+| `MOD4` + `z`    | save current wallpaper to favourites |
+| `MOD4` + `x` | get a random wallpaper from favourites            |
+
 
 
 ## Editors:

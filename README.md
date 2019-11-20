@@ -24,6 +24,10 @@ i will get an propper installer when i get to it.
 
 > Wallpaper changer uses unsplash's url api, please make sure to change it to your liking (currently: `nature` & `water` tags are used).
 
+## Default Layout
+![Layout](./docs/dotfilez-layout.jpg)
+
+
 
 ## Depencies/Configured programs so far:
 - flameshot

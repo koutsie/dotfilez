@@ -1,21 +1,20 @@
+
 #!/bin/bash 
 
 while :
 do
-   current=$(cat /sys/class/power_supply/BAT1/capacity)
-   charging=$(cat /sys/class/power_supply/BAT1/status)
+    current=$(cat /sys/class/power_supply/BAT1/capacity)
+    charging=$(cat /sys/class/power_supply/BAT1/status)
+    
+		if [[ "$curdrent" -ge "50" ]]; then
+				dunstify --icon=battery-good $current% --timeout=50000
+			
+		else 
+			if [[ "$curdrent" -le "49" ]]; then
+				dunstify --icon=battery-caution $current% --timeout=5000
+			fi
+		fi
 
-if [ "$charging" == "Charging" ]; then
-        dunstify --urgency=critical --icon=battery-full-charged Charging...
-fi
-
-if [[ "$curdrent" -le "50" ]]; then
-	dunstify --urgency=critical --icon=battery-caution $current%
-fi
-
-if [[ "$current" -ge "51" ]]; then
-	dunstify  --urgency=critical --icon=battery-good $current%
-fi
-
-sleep 600
+    sleep 600
+    
 done

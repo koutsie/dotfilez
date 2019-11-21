@@ -49,8 +49,8 @@ donate=$(cat << EOF
         
               ${ond}${pink}0x02a17dbf3d15962150e4efe8f74e2491d733629f${rs}
                                                                           
-                                                                          
-EOF)
+EOF
+)
 
 echo installing to /home/"$USER"/
 

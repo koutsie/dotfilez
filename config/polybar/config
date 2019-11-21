@@ -45,7 +45,7 @@ interval = 600
 width = 30%
 height = 20
 radius = 0
-offset-y = 70%
+offset-x = 70%
 
 monitor=
 monitor-fallback =

@@ -48,3 +48,17 @@ frame_color = "#2E000E"
 foreground = "#FFFFFF"
 background = "170007"
 timeout = 6
+
+
+[urgency_normal]
+frame_color = "#2E000E"
+foreground = "#FFFFFF"
+background = "170007"
+timeout = 12
+
+
+[urgency_critical]
+frame_color = "#2E000E"
+foreground = "#FFFFFF"
+background = "170007"
+timeout = 16

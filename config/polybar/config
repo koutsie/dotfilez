@@ -1,0 +1,91 @@
+[colors]
+background = #000000
+foreground = #ffffff
+primary = #fff000
+secondary = #e60032
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %r
+
+; Optional time format
+time = %H:%M
+
+; if `date-alt` or `time-alt` is defined, clicking
+; the module will toggle between formats
+date-alt = %A, %d %B %Y
+time-alt = %H:%M:%S
+
+
+
+[module/volume]
+type = custom/script
+exec = ~/Scripts/poly/volume.sh
+interval = 3
+
+
+[module/weather]
+type = custom/script
+exec = ~/Scripts/poly/weather.sh
+interval = 300
+
+[module/battery]
+type = custom/script
+exec = ~/Scripts/poly/battery.sh
+interval = 60
+
+[module/updates]
+type = custom/script
+exec = ~/Scripts/poly/updates.sh
+interval = 600
+
+
+[bar/minimax]
+width = 100%
+height = 25
+radius = 5.0
+offset-x = 0%
+
+
+monitor=
+monitor-fallback =
+monitor-strict = false
+monitor-exact = true
+override-redirect = false
+
+bottom = true
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #00000000
+padding-left = 2
+padding-right = 2
+module-margin-left = 2
+module-margin-right = 2
+
+modules-left = 
+modules-center = weather
+modules-right = updates battery date
+separator = "|"
+
+tray-detached = false
+
+tray-maxsize = 24
+tray-position = left
+tray-padding = 1
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+
+dpi-x = 96
+dpi-y = 96
+
+enable-ipc = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5

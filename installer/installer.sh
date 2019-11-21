@@ -59,7 +59,7 @@ echo "${rnd}Installing to ${pink}/home/"$USER"/${rs}"
 printf "\n\n\n\n"
 
 echo "${rnd}Getting dotfilez${rs}"
-git clone https://github.com/koutsie/dotfilez.git
+git clone https://github.com/koutsie/dotfilez.git &> dotz.log
 cd dotfilez
 
 # --------------------------------------
@@ -73,19 +73,19 @@ sed -i "s/koutsie/$USER/g" sowm.desktop
 printf "\n\n\n\n"
 
 echo "${rnd}Making directories${rs}"
-mkdir /home/"$USER"/Wallpapers
+mkdir /home/"$USER"/Wallpapers &> dotz.log
 echo "${rnd}New dir: ${ylw}Wallpapers${rs}"
 
-mkdir /home/"$USER"/Scripts
+mkdir /home/"$USER"/Scripts &> dotz.log
 echo "${rnd}New dir: ${ylw}Scripts${rs}"
 
-mkdir /home/"$USER"/Scripts/poly
+mkdir /home/"$USER"/Scripts/poly &> dotz.log
 echo "${rnd}New dir: ${ylw}Scripts/poly${rs}"
 
-mkdir /home/"$USER"/.config/polybar
+mkdir /home/"$USER"/.config/polybar &> dotz.log
 echo "${rnd}New dir: ${ylw}.config/polybar${rs}"
 
-mkdir /home/"$USER"/dunst
+mkdir /home/"$USER"/dunst &> dotz.log
 echo "${rnd}New dir ${ylw}.config/dunst${rs}"
 
 
@@ -93,34 +93,34 @@ echo "${rnd}New dir ${ylw}.config/dunst${rs}"
 printf "\n\n\n\n"
 
 echo "${rnd}Copying configs and scripts${rs}"
-cp -r --verbose config/polybar/* /home/"$USER"/.config/
-cp -r --verbose config/dunst/* /home/"$USER"/.config/
-cp -r --verbose config/neofetch/* /home/"$USER"/.config/
-cp -r --verbose config/i3/ /home/"$USER"/.config/
+cp -r config/polybar/* /home/"$USER"/.config/ &> dotz.log
+cp -r config/dunst/* /home/"$USER"/.config/ &> dotz.log
+cp -r config/neofetch/* /home/"$USER"/.config/ &> dotz.log
+cp -r config/i3/ /home/"$USER"/.config/ &> dotz.log
 
-cp -r --verbose Scripts/ /home/"$USER"/
-cp -r --verbose Scripts/poly/ /home/"$USER"/Scripts/
+cp -r Scripts/ /home/"$USER"/ &> dotz.log
+cp -r Scripts/poly/ /home/"$USER"/Scripts/ &> dotz.log
 
 chmod +x /home/"$USER"/Scripts/*
 chmod +x /home/"$USER"/Scripts/poly/*
 
 echo "${rnd}Adding bashrcs${rs}"
-cp --verbose .bashrc /home/"$USER"/.bashrc
+cp .bashrc /home/"$USER"/.bashrc &> dotz.log
 
-cp --verbose .bashrc_aliases /home/"$USER"/.bashrc_aliases
+cp .bashrc_aliases /home/"$USER"/.bashrc_aliases &> dotz.log
 
-cp --verbose .bashrc_user /home/"$USER"/.bashrc_user
+cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
 
 # --------------------------------------
 printf "\n\n\n\n"
 
 # sowm stuff
 echo "${rnd}getting, compiling and installing ${pink}sowm${rs}"
-git clone https://github.com/dylanaraps/sowm sowm_source 
-cp --verbose sowm/config.def.h sowm_source/config.def.h
-cd sowm_source && make -B && sudo make install && cd ..
+git clone https://github.com/dylanaraps/sowm sowm_source &> dotz.log
+cp --verbose sowm/config.def.h sowm_source/config.def.h &> dotz.log
+cd sowm_source && make -B && sudo make install && cd .. &> dotz.log
 
-sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop
+sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log
 
 # --------------------------------------
 printf "\n\n\n\n"

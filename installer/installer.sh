@@ -92,8 +92,8 @@ echo "New dir .config/dunst"
 printf "\n\n\n\n"
 
 echo "copying configs and scripts"
-cp --verbose config/poly* /home/"$USER"/.config/polybar
-cp --verbose config/dunst* /home/"$USER"/.config/dunst
+cp --verbose config/poly/* /home/"$USER"/.config/polybar
+cp --verbose config/dunst/* /home/"$USER"/.config/dunst
 
 
 cp --verbose Scripts/* /home/"$USER"/Scripts

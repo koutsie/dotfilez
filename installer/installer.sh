@@ -93,10 +93,10 @@ echo "${rnd}New dir ${ylw}.config/dunst${rs}"
 printf "\n\n"
 
 echo "${rnd}Copying configs and scripts${rs}"
-cp -r config/polybar/* /home/"$USER"/.config/ &> dotz.log
-cp -r config/dunst/* /home/"$USER"/.config/ &> dotz.log
-cp -r config/neofetch/* /home/"$USER"/.config/ &> dotz.log
-cp -r config/i3/* /home/"$USER"/.config/ &> dotz.log
+cp -r config/polybar /home/"$USER"/.config/ &> dotz.log
+cp -r config/dunst /home/"$USER"/.config/ &> dotz.log
+cp -r config/neofetch /home/"$USER"/.config/ &> dotz.log
+cp -r config/i3 /home/"$USER"/.config/ &> dotz.log
 
 cp -r Scripts/ /home/"$USER"/ &> dotz.log
 cp -r Scripts/poly/ /home/"$USER"/Scripts/ &> dotz.log

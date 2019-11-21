@@ -12,6 +12,7 @@ echo installing to /home/"$USER"/
 
 echo getting dotfilez
 git clone https://github.com/koutsie/dotfilez.git
+cd dotfilez
 
 echo "Baking a special cake, just for $USER"
 sed -i "s/koutsie/$USER/g" sowm/config.def.h

@@ -31,7 +31,7 @@ cp --verbose Scripts/poly/* /home/"$USER"/Scripts/poly
 chmod +x /home/"$USER"/Scripts/*
 chmod +x /home/"$USER"/Scripts/poly*
 
-echo adding bashrc's
+echo adding bashrcs
 cp --verbose .bashrc /home/"$USER"/.bashrc
 
 cp --verbose .bashrc_aliases /home/"$USER"/.bashrc_aliases

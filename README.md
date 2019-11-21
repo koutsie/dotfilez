@@ -10,11 +10,11 @@ Updated dotfiles this time with i3, sowm etc
 ## install:
 Install deps:
 
-```yay -S flameshot bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot polybar bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
 
 Install dotfilez:
 
-```curl -fsSL https://git.io/Je6fO | bash```
+```curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/installer/installer.sh | bash```
 
 
 ### Notes:
@@ -43,12 +43,13 @@ Install dotfilez:
 - sed
 - screen
 - bash
+- polybar
 
 
 
 Wich you can easily install with *yay*: 
 
-```yay -S flameshot bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot polybar bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
 
 
 ## Default Layout

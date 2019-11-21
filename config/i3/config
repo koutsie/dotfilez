@@ -4,7 +4,6 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -196,8 +195,9 @@ bar {
 # Keybind for screenshot
 bindsym --release Print exec "flameshot gui"
 
-# Set background
-exec_always --no-startup-id feh --no-fehbg --bg-scale ~/Pictures/Wallpapers/178343.jpg &
+#wallpaper script 
+exec_always /home/$USER$/Scripts/wallpaper.sh
+exec_always setxkbmap fi,fi
 
 # i3-gaps requirements
 for_window [class=".*"] border pixel 0

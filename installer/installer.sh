@@ -56,21 +56,21 @@ EOF
 echo "${rnd}Installing to ${pink}/home/"$USER"/${rs}"
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 echo "${rnd}Getting dotfilez${rs}"
 git clone https://github.com/koutsie/dotfilez.git &> dotz.log
 cd dotfilez
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 echo "${rnd}Baking a special cake, just for ${pink}$USER${rs}"
 sed -i "s/koutsie/$USER/g" sowm/config.def.h
 sed -i "s/koutsie/$USER/g" sowm.desktop
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 echo "${rnd}Making directories${rs}"
 mkdir /home/"$USER"/Wallpapers &> dotz.log
@@ -90,7 +90,7 @@ echo "${rnd}New dir ${ylw}.config/dunst${rs}"
 
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 echo "${rnd}Copying configs and scripts${rs}"
 cp -r config/polybar/* /home/"$USER"/.config/ &> dotz.log
@@ -112,7 +112,7 @@ cp .bashrc_aliases /home/"$USER"/.bashrc_aliases &> dotz.log
 cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 # sowm stuff
 echo "${rnd}getting, compiling and installing ${pink}sowm${rs}"
@@ -123,6 +123,6 @@ cd sowm_source && make -B && sudo make install && cd .. &> dotz.log
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log
 
 # --------------------------------------
-printf "\n\n\n\n"
+printf "\n\n"
 
 echo "$donate"

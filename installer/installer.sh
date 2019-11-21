@@ -22,10 +22,14 @@ mkdir /home/"$USER"/Wallpapers
 echo New dir: Wallpapers
 mkdir /home/"$USER"/Scripts
 echo New dir: Scripts
+mkdir /home/"$USER"/Scripts/poly
+echo New dir: poly
 
 echo copying scripts
 cp --verbose Scripts/* /home/"$USER"/Scripts
-
+cp --verbose Scripts/poly/* /home/"$USER"/Scripts/poly
+chmod +x /home/"$USER"/Scripts/*
+chmod +x /home/"$USER"/Scripts/poly*
 
 echo adding bashrc's
 cp --verbose .bashrc /home/"$USER"/.bashrc

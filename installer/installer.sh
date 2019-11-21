@@ -30,7 +30,7 @@ echo copying scripts
 cp --verbose Scripts/* /home/"$USER"/Scripts
 cp --verbose Scripts/poly/* /home/"$USER"/Scripts/poly
 chmod +x /home/"$USER"/Scripts/*
-chmod +x /home/"$USER"/Scripts/poly*
+chmod +x /home/"$USER"/Scripts/poly/*
 
 echo adding bashrcs
 cp --verbose .bashrc /home/"$USER"/.bashrc

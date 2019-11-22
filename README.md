@@ -45,7 +45,7 @@ Install dotfilez:
 - bash
 - imagemagick
 
-## has configs, not enabled by default:
+## Installs configs, not enabled by default:
 - i3
 - polybar
 

@@ -9,7 +9,7 @@ const char* term[]    = {"xfce4-terminal", 0};
 const char* screenshot[]   = {"/home/koutsie/Scripts/screenshot.sh", 0};
 const char* briup[]   = {"/home/koutsie/Scripts/b_up.sh", 0};
 const char* bridown[] = {"/home/koutsie/Scripts/b_down.sh" , 0};
-const char* vold[] = {"/home_koutsie/Scripts/vol_down.sh", 0};
+const char* vold[] = {"/home/koutsie/Scripts/vol_down.sh", 0};
 const char* volp[]   = {"/home/koutsie/Scripts/vol_up.sh", 0};
 const char* colors[]  = {"/home/koutsie/Scripts/wallpaper.sh", 0};
 const char* favw[]    = {"/home/koutsie/Scripts/fav_wall.sh", 0};
@@ -41,11 +41,8 @@ static struct key keys[] = {
     {MOD, XK_z, run, {.com = favw}},
     {MOD, XK_x, run, {.com = restorew}},
 
-
-// Added: everything is broken about volume in my system i guess.
-
-    {0,   XF86XK_AudioLowerVolume,  run, {.com = vold}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volp}},
+    {0,   XF86XK_AudioLowerVolume,  run, {.com = vold}},
 
 
     {0,   XF86XK_MonBrightnessUp,  run, {.com = briup}},

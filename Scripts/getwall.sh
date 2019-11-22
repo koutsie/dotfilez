@@ -3,4 +3,5 @@
 cd /home/$USER/Wallpapers/
 
 wallpaper=$(ls | shuf -n1)
+cp $wallpaper /tmp/wall.jpg
 feh --bg-fill "$wallpaper"

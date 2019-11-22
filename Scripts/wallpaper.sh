@@ -9,7 +9,7 @@ weather=$(cat /tmp/weather.tmp)
 date=$(date +"%H:%M")
 savelocation=/tmp/wall.jpg
 statslocation=/tmp/wall-stats.jpg
-imgprovider=https://source.unsplash.com/1920x1080/?nature,trees
+imgprovider=https://source.unsplash.com/1920x1080/?nature,dark
 
 wget -N  "$imgprovider" -O "$savelocation" 2> /dev/null
 convert -pointsize 48 -fill white -annotate +1200+1000 "$weather | $date | $battery%" $savelocation $statslocation

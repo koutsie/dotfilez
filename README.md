@@ -10,7 +10,7 @@ Updated dotfiles this time with i3, sowm etc
 ## install:
 Install deps:
 
-```yay -S flameshot polybar bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
 
 Install dotfilez:
 
@@ -36,20 +36,24 @@ Install dotfilez:
 - mpsyt (mps-youtube)
 - dunst
 - git
-- sowm
+- sowm (build automatically if using installer)
 - feh
 - imlib2
 - xfce4-terminal
 - sed
 - screen
 - bash
+- imagemagick
+
+## has configs, not enabled by default:
+- i3
 - polybar
 
 
 
 Wich you can easily install with *yay*: 
 
-```yay -S flameshot polybar bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
 
 
 ## Default Layout

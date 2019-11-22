@@ -6,7 +6,7 @@
 #              feh, wget, imlib2, curl, imagemagic
 battery=$(cat /sys/class/power_supply/BAT1/capacity)
 weather=$(cat /tmp/weather.tmp)
-date=$(date +"%H:%M:%S")
+date=$(date +"%H:%M")
 savelocation=/tmp/wall.jpg
 statslocation=/tmp/wall-stats.jpg
 imgprovider=https://source.unsplash.com/1920x1080/?nature,trees

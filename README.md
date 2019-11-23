@@ -106,6 +106,6 @@ For geany: `tango light` with `sourcecode variable bold`
 
 wanna donate?
 
-[![donate3.th.png](https://s5.gifyu.com/images/donate3.th.png)](https://gifyu.com/image/vI0f)
+![epic.gif](https://s5.gifyu.com/images/epic.gif)
 
 eth: *`?0x02a17dbf3d15962150e4efe8f74e2491d733629f`*

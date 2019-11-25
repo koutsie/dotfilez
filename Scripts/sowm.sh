@@ -1,4 +1,4 @@
 #!/bin/bash
 screen -dmS sowm /usr/bin/sowm &
-exec /home/"$USER$"/Scripts/st.sh &
+bash /home/"$USER"/Scripts/it.sh &
 sleep infinity

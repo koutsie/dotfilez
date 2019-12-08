@@ -9,3 +9,6 @@ screen -dmS weathermon /home/"$USER"/Scripts/weather.sh &
 dunstify "sowm" "Weathermon started." &
 screen -dmS redshift /usr/bin/redshift &
 dunstify "sowm" "Redshift started" &
+screen -dmS kdeconnectapp /usr/bin/kdeconnect-app &
+dunstify "sowm" "Kdeconnect started" &
+

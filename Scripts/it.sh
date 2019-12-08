@@ -11,4 +11,6 @@ screen -dmS redshift /usr/bin/redshift &
 dunstify "sowm" "Redshift started" &
 screen -dmS kdeconnectapp /usr/bin/kdeconnect-app &
 dunstify "sowm" "Kdeconnect started" &
+screen -dmS pbih /usr/bin/plasma-browser-integration-host &
+dunstify "sowm" "Plasma browser integration started" &
 

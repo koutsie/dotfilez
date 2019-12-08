@@ -10,7 +10,7 @@ Updated dotfiles this time with i3, sowm etc
 ## install:
 Install deps:
 
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
 
 Install dotfilez:
 
@@ -45,6 +45,7 @@ Install dotfilez:
 - bash
 - imagemagick
 - redshift
+- kdeconnect
 
 ## Installs configs, not enabled by default:
 - i3
@@ -54,7 +55,7 @@ Install dotfilez:
 
 Wich you can easily install with *yay*: 
 
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen```
+```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
 
 
 ## Default Layout

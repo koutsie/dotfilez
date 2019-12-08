@@ -10,7 +10,7 @@ Updated dotfiles this time with i3, sowm etc
 ## install:
 Install deps:
 
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
+```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git plasma-browser-integration-host```
 
 Install dotfilez:
 
@@ -51,11 +51,6 @@ Install dotfilez:
 - i3
 - polybar
 
-
-
-Wich you can easily install with *yay*: 
-
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
 
 
 ## Default Layout

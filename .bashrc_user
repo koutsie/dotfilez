@@ -1,10 +1,7 @@
-# Stuff:
-export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33'
-export PS1="[\e[1;34m\u@\h]\e[0m:\w\\$ \[$(tput sgr0)\]\e[0m"
-
 #Information line:
 airtemp=$(curl -s wttr.in/oulu?format=3)
 dateline=$(date +"%d/%m/%Y")
 echo -e "\e[95m $dateline \e[39m // \e[92m $airtemp \e[39m"
 
 printf "\n"
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="9"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="23"/>
+        <value type="int" value="25"/>
+        <value type="int" value="7"/>
+        <value type="int" value="15"/>
+        <value type="int" value="16"/>
+        <value type="int" value="24"/>
+        <value type="int" value="20"/>
+        <value type="int" value="26"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+      </property>
+      <property name="disable-struts" type="bool" value="true"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.416107"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="tux"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="show-generic-names" type="bool" value="true"/>
+      <property name="button-title" type="string" value=""/>
+    </property>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-wireframes" type="bool" value="true"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="qcma"/>
+        <value type="string" value="valvegames-region-selector"/>
+        <value type="string" value="discordcanary"/>
+        <value type="string" value="simplescreenrecorder"/>
+        <value type="string" value="megasync"/>
+        <value type="string" value="lutris"/>
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="ckb-next"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="teams-for-linux"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="virt-manager"/>
+        <value type="string" value="mumble"/>
+        <value type="string" value="firestarter"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance10321;chromium.instance1042;chromium.instance1046;chromium.instance1055;chromium.instance1065;chromium.instance1098;chromium.instance1102;chromium.instance110943;chromium.instance1143;chromium.instance1165;chromium.instance1185;chromium.instance12143;chromium.instance1224;chromium.instance1278;chromium.instance1316;chromium.instance13882;chromium.instance1415;chromium.instance1455;chromium.instance146473;chromium.instance1529;chromium.instance1696;chromium.instance17350;chromium.instance18068;chromium.instance18992;chromium.instance1940;chromium.instance21848;chromium.instance2234;chromium.instance23473;chromium.instance31627;chromium.instance32495;chromium.instance40592;chromium.instance41181;chromium.instance5007;chromium.instance51970;chromium.instance5360;chromium.instance61097;chromium.instance67226;chromium.instance68925;chromium.instance72585;chromium.instance794;chromium.instance823;chromium.instance845;chromium.instance862;chromium.instance865;chromium.instance866;chromium.instance877;chromium.instance880;chromium.instance887;chromium.instance890;chromium.instance892;chromium.instance89917;chromium.instance912;chromium.instance92064;chromium.instance939;chromium.instance976;chromium.instance990"/>
+    </property>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="mode" type="uint" value="3"/>
+      <property name="show-seconds" type="bool" value="true"/>
+      <property name="flash-separators" type="bool" value="true"/>
+      <property name="show-military" type="bool" value="false"/>
+      <property name="show-meridiem" type="bool" value="true"/>
+      <property name="fuzziness" type="uint" value="1"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-7" type="string" value="xfce4-sensors-plugin"/>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-16" type="string" value="systemload"/>
+    <property name="plugin-20" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-23" type="string" value="cpufreq"/>
+    <property name="plugin-24" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-25" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="show-qr-code" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="string" value="separator"/>
+    <property name="plugin-26" type="string" value="fsguard"/>
+  </property>
+</channel>

@@ -1,0 +1,132 @@
+{
+	"changelog": {
+		"currentversion": "4.1.3"
+	},
+	"channels": {
+		"524412041717350402": {
+			"color": [
+				52,
+				152,
+				219,
+				1
+			],
+			"inheritColor": false,
+			"name": "aqua!"
+		},
+		"524412041717350403": {
+			"color": [
+				52,
+				84,
+				219
+			],
+			"inheritColor": false,
+			"name": "General Chat"
+		},
+		"528818702939062273": {
+			"color": [
+				155,
+				89,
+				182
+			],
+			"inheritColor": false,
+			"name": "Logs & To Do"
+		},
+		"545653772387614740": {
+			"color": [
+				241,
+				196,
+				15
+			],
+			"inheritColor": false,
+			"name": "Version Changelogs"
+		},
+		"555527272522579980": {
+			"color": null,
+			"inheritColor": false,
+			"name": "vc's"
+		},
+		"557522624842956801": {
+			"color": null,
+			"inheritColor": false,
+			"name": "Not Safe for Work"
+		},
+		"573253820033794048": {
+			"color": [
+				17,
+				128,
+				106
+			],
+			"inheritColor": false,
+			"name": "Media"
+		},
+		"573822144257982474": {
+			"color": [
+				231,
+				76,
+				60
+			],
+			"inheritColor": false,
+			"name": "Development Chat"
+		},
+		"643639320061804545": {
+			"color": [
+				168,
+				67,
+				0,
+				1
+			],
+			"inheritColor": false,
+			"name": "Media"
+		},
+		"689149760032342091": {
+			"color": [
+				255,
+				247,
+				0,
+				1
+			],
+			"inheritColor": false,
+			"name": "Giveaways"
+		},
+		"694714727355383848": {
+			"color": [
+				233,
+				30,
+				99
+			],
+			"inheritColor": false,
+			"name": "General chat"
+		},
+		"697332043318558731": {
+			"color": [
+				82,
+				233,
+				30,
+				1
+			],
+			"inheritColor": false,
+			"name": "Song suggestions"
+		},
+		"702824776812462130": {
+			"color": [
+				49,
+				58,
+				52
+			],
+			"inheritColor": false,
+			"name": "Mint's corner."
+		}
+	},
+	"settings": {
+		"changeChannelIcon": true,
+		"changeInAuditLog": true,
+		"changeInAutoComplete": true,
+		"changeInChannelHeader": true,
+		"changeInChannelList": true,
+		"changeInChatTextarea": true,
+		"changeInInviteLog": true,
+		"changeInMentions": true,
+		"changeInQuickSwitcher": true,
+		"changeInRecentMentions": true
+	}
+}

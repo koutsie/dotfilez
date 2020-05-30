@@ -89,8 +89,9 @@ printf "\n\n"
 echo "${rnd}Getting, compiling and installing ${pink}Shitty Opinionated Window Manager${rs}"
 git clone https://github.com/dylanaraps/sowm sowm_source &> dotz.log
 cp --verbose sowm/config.def.h sowm_source/config.def.h &> dotz.log
-git apply patches/58.patch
-git apply patches/70.patch
+git apply https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/59.patch # keyboard move+rezie
+git apply https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/70.patch # multihead fullscreen support 
+git apply https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/58.patch # rounded corners cus fuck yout
 cd sowm_source && make -B && sudo make install && cd .. &> dotz.log
 
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log

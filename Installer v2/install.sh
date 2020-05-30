@@ -91,9 +91,9 @@ cd sowm
 
 # getting the patches ma duud
 echo "${rnd}Patching sowm${rs}"
-# patch -t < patches/58.patch  &> dotz.log
+patch -t < patches/58.patch  &> dotz.log
 patch -t < patches/59.patch  &> dotz.log
-patch -t < patches/70.patch  &> dotz.log
+#patch -t < patches/70.patch  &> dotz.log
 
 echo "${rnd}Building sowm${rs}"
 make -B && sudo make install 

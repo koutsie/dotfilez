@@ -91,12 +91,12 @@ cd sowm
 
 # getting the patches ma duud
 echo "${rnd}Patching sowm${rs}"
-git apply $dotfilez/sowm/patches/58.patch  &> dotz.log
-git apply $dotfilez/sowm/patches/59.patch  &> dotz.log
-git apply $dotfilez/sowm/patches/70.patch  &> dotz.log
+git apply patches/58.patch  
+git apply patches/59.patch  #&> dotz.log
+git apply patches/70.patch  #&> dotz.log
 
 echo "${rnd}Building sowm${rs}"
-make -B && sudo make install &> dotz.log
+make -B && sudo make install 
 
 cd $dotfiles
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log

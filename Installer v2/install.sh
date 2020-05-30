@@ -98,6 +98,7 @@ git apply $dotfilez/sowm/patches/70.patch  &> dotz.log
 echo "${rnd}Building sowm${rs}"
 make -B && sudo make install &> dotz.log
 
+cd $dotfiles
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log
 echo "${rnd}Done!${rs}"
 

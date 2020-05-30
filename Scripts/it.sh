@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script is the initial script that is gonna be ran after sowm has been started.
+# Feel free to uncomment the line below to enabled "custom boot animations".
 #/home/"$USER"/Scripts/animation.sh &
 #sleep 5
 dunst &

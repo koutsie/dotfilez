@@ -3,18 +3,18 @@
 
 # dotfilez
 
-Updated dotfiles this time with i3, sowm etc
+Updated dotfiles this time with sowm, qtile, i3 etc etc
 
 
 
 ## install:
 Install deps:
 
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git plasma-browser-integration-host```
+```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
 
 Install dotfilez:
 
-```curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/installer/installer.sh | bash```
+```curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/Installer%20v2/install.sh | bash```
 
 
 ### Notes:

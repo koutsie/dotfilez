@@ -3,6 +3,7 @@ red=`tput setaf 116`
 orange=`tput setaf 213`
 pink=`tput setaf 212`
 rnd=`tput setaf 208`
+ylw=`tput setaf 12`
 orange=`tput setaf 142`
 bold=`tput bold`
 rs=`tput sgr0`
@@ -15,14 +16,15 @@ donate=$(cat << EOF
        ${orange}██████╔╝╚██████╔╝   ██║   ${red}██║     ██║███████╗███████╗███████╗${rs}
        ${orange}╚═════╝  ╚═════╝    ╚═╝   ${red}╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝${rs}
                                   Donate?                                                                     
-        ${bold}Donate to a charity, if you can.${rs}          
-        
-              ${rnd}thank you.${rs}
+				${bold}Donate to a charity, if you can.${rs}          
+						  ${rnd}thank you.${rs}
                                                                           
 EOF
 )
 
 echo "${rnd}Installing to ${pink}/home/"$USER"/${rs}"
+echo "${ylwIf you think something went wrong with the installation, see dotz.log${rs}"
+
 
 # --------------------------------------
 printf "\n\n"
@@ -69,12 +71,12 @@ cp -r config/i3 /home/"$USER"/.config/ &> dotz.log
 cp -r Scripts/ /home/"$USER"/ &> dotz.log
 cp -r Scripts/poly/ /home/"$USER"/Scripts/ &> dotz.log
 
+echo "${rnd}Fixing permissions${rs}"
 chmod +x /home/"$USER"/Scripts/*
 chmod +x /home/"$USER"/Scripts/poly/*
 
 echo "${rnd}Adding bashrcs${rs}"
 cp .bashrc /home/"$USER"/.bashrc &> dotz.log
-
 cp .bashrc_aliases /home/"$USER"/.bashrc_aliases &> dotz.log
 
 cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
@@ -83,20 +85,21 @@ cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
 printf "\n\n"
 
 # sowm stuff
-echo "${rnd}Getting, compiling and installing ${orange}Shitty Opinionated Window Manager${rs}"
-git clone https://github.com/dylanaraps/sowm sowm_source &> dotz.log
-cp --verbose sowm/config.def.h sowm_source/config.def.h &> dotz.log
-cd sowm_source
+echo "${rnd}Installing ${orange}Shitty Opinionated Window Manager${rs}"
+
+cd sowm
 
 # getting the patches ma duud
-
+echo "${rnd}Patching sowm${rs}"
 git apply $dotfilez/sowm/patches/58.patch  &> dotz.log
 git apply $dotfilez/sowm/patches/59.patch  &> dotz.log
 git apply $dotfilez/sowm/patches/70.patch  &> dotz.log
 
-make -B && sudo make install && cd .. &> dotz.log
+echo "${rnd}Building sowm${rs}"
+make -B && sudo make install &> dotz.log
 
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log
+echo "${rnd}Done!${rs}"
 
 # --------------------------------------
 printf "\n\n"

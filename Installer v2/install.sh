@@ -38,7 +38,7 @@ cd dotfilez
 # --------------------------------------
 printf "\n\n"
 
-echo "${rnd}Baking a special cake, just for ${pink}$USER${rs}"
+echo "${rnd}Making install user specific: ${pink}[$USER]${rs}"
 sed -i "s/koutsie/$USER/g" sowm/config.def.h
 sed -i "s/koutsie/$USER/g" sowm.desktop
 

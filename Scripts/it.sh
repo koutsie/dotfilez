@@ -9,6 +9,5 @@ screen -dmS weathermon /home/"$USER"/Scripts/weather.sh &
 screen -dmS redshift /usr/bin/redshift &
 sleep 3
 screen -dmS kdeconnectapp /usr/bin/kdeconnect-app &
-screen -dmS pbih /usr/bin/plasma-browser-integration-host &
 dunstify "sowm" "Welcome, $USER!" &
 

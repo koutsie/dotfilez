@@ -23,7 +23,7 @@ EOF
 )
 
 echo "${rnd}Installing to ${pink}/home/"$USER"/${rs}"
-echo "${ylwIf you think something went wrong with the installation, see dotz.log${rs}"
+echo "${ylw}If you think something went wrong with the installation, see dotz.log${rs}"
 
 
 # --------------------------------------

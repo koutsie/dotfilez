@@ -1,26 +1,23 @@
 #!/bin/bash
 red=`tput setaf 116`
-ylw=`tput setaf 213`
+orange=`tput setaf 213`
 pink=`tput setaf 212`
 rnd=`tput setaf 208`
+orange=`tput setaf 142`
 bold=`tput bold`
 rs=`tput sgr0`
 
 donate=$(cat << EOF
-       ${ylw}██████╗  ██████╗ ████████╗${red}███████╗██╗██╗     ███████╗███████╗${rs}
-       ${ylw}██╔══██╗██╔═══██╗╚══██╔══╝${red}██╔════╝██║██║     ██╔════╝╚══███╔╝${rs}
-       ${ylw}██║  ██║██║   ██║   ██║   ${red}█████╗  ██║██║     █████╗    ███╔╝ ${rs}
-       ${ylw}██║  ██║██║   ██║   ██║   ${red}██╔══╝  ██║██║     ██╔══╝   ███╔╝  ${rs}
-       ${ylw}██████╔╝╚██████╔╝   ██║   ${red}██║     ██║███████╗███████╗███████╗${rs}
-       ${ylw}╚═════╝  ╚═════╝    ╚═╝   ${red}╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝${rs}
-                                  Donate?
-                                                                          
-                                                                                                    
-        ${bold}${rs}          
+       ${orange}██████╗  ██████╗ ████████╗${red}███████╗██╗██╗     ███████╗███████╗${rs}
+       ${orange}██╔══██╗██╔═══██╗╚══██╔══╝${red}██╔════╝██║██║     ██╔════╝╚══███╔╝${rs}
+       ${orange}██║  ██║██║   ██║   ██║   ${red}█████╗  ██║██║     █████╗    ███╔╝ ${rs}
+       ${orange}██║  ██║██║   ██║   ██║   ${red}██╔══╝  ██║██║     ██╔══╝   ███╔╝  ${rs}
+       ${orange}██████╔╝╚██████╔╝   ██║   ${red}██║     ██║███████╗███████╗███████╗${rs}
+       ${orange}╚═════╝  ╚═════╝    ╚═╝   ${red}╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝${rs}
+                                  Donate?                                                                     
+        ${bold}Donate to a charity, if you can.${rs}          
         
-        
-        
-              ${pink}thank you.${rs}
+              ${rnd}thank you.${rs}
                                                                           
 EOF
 )
@@ -33,6 +30,7 @@ printf "\n\n"
 echo "${rnd}Getting dotfilez${rs}"
 git clone https://github.com/koutsie/dotfilez.git &> dotz.log
 cd dotfilez
+dotfilez=$(pwd)
 
 # --------------------------------------
 printf "\n\n"
@@ -85,19 +83,18 @@ cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
 printf "\n\n"
 
 # sowm stuff
-echo "${rnd}Getting, compiling and installing ${pink}Shitty Opinionated Window Manager${rs}"
+echo "${rnd}Getting, compiling and installing ${orange}Shitty Opinionated Window Manager${rs}"
 git clone https://github.com/dylanaraps/sowm sowm_source &> dotz.log
 cp --verbose sowm/config.def.h sowm_source/config.def.h &> dotz.log
+cd sowm_source
 
 # getting the patches ma duud
-#curl https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/58.patch -o 58.patch  &> dotz.log # rounded corners cus fuck yout
-#curl https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/59.patch -o 59.patch  &> dotz.log # multihead fullscreen support
-#curl https://patch-diff.githubusercontent.com/raw/dylanaraps/sowm/pull/70.patch -o 70.patch  &> dotz.log # keyboard move+rezie
-git apply 58.patch  &> dotz.log
-git apply 59.patch  &> dotz.log
-git apply 70.patch  &> dotz.log
 
-cd sowm_source && make -B && sudo make install && cd .. &> dotz.log
+git apply $dotfilez/sowm/patches/58.patch  &> dotz.log
+git apply $dotfilez/sowm/patches/59.patch  &> dotz.log
+git apply $dotfilez/sowm/patches/70.patch  &> dotz.log
+
+make -B && sudo make install && cd .. &> dotz.log
 
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log
 

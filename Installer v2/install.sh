@@ -17,7 +17,7 @@ donate=$(cat << EOF
                                                                           
                                                                                                     
         ${bold}want to donate? 
-								donate to an charity of your choice${rs}          
+								  donate to an charity of your choice${rs}          
         
         
         
@@ -86,7 +86,7 @@ cp .bashrc_user /home/"$USER"/.bashrc_user &> dotz.log
 printf "\n\n"
 
 # sowm stuff
-echo "${rnd}getting, compiling and installing ${pink}sowm${rs}"
+echo "${rnd}Getting, compiling and installing ${pink}Shitty Opinionated Window Manager${rs}"
 git clone https://github.com/dylanaraps/sowm sowm_source &> dotz.log
 cp --verbose sowm/config.def.h sowm_source/config.def.h &> dotz.log
 git apply patches/58.patch

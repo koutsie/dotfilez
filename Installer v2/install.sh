@@ -95,7 +95,7 @@ patch -t < patches/58.patch  &> dotz.log
 patch -t < patches/59.patch  &> dotz.log
 
 echo "${rnd}Building sowm${rs}"
-make -B -w && sudo make install 
+make -B -s && sudo make install 
 
 cd $dotfiles
 sudo cp --verbose sowm.desktop /usr/share/xsessions/sowm.desktop &> dotz.log

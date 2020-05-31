@@ -11,5 +11,5 @@ screen -dmS weathermon /home/"$USER"/Scripts/weather.sh &
 screen -dmS redshift /usr/bin/redshift &
 sleep 3
 screen -dmS kdeconnectapp /usr/bin/kdeconnect-app &
-dunstify "sowm" "Welcome, $USER!" &
+notify-send "sowm" "Welcome, $USER!" &
 

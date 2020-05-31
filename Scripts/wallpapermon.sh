@@ -1,4 +1,5 @@
 #!/bin/bash
+# There must be a better way to do this lmao
 savelocation=/tmp/wall.jpg
 statslocation=/tmp/wall-stats.jpg
 

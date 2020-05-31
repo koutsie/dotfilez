@@ -3,6 +3,6 @@
 
 ran=$((1 + RANDOM % 66350))
 now=$(date +%Y-%m-%d)
-dunstify "Saving favourite to Wallpapers"
+notify-send "Saving favourite to Wallpapers"
 cp /tmp/wall.jpg /home/"$USER"/Wallpapers/wal-"$now"-"$ran".jpg
-dunstify "Done!"
+notify-send "Done!"

@@ -4,4 +4,4 @@ current=$(pamixer --get-volume)
 volume=$(pamixer --get-volume-human)
 
 pamixer -i 2 --allow-boost
-dunstify --urgency=low $volume
+notify-send --urgency=low $volume

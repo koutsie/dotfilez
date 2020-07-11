@@ -1,5 +1,7 @@
 <img src="https://i.ibb.co/jGMg3Ym/bootifull.png" />
 
+[![HitCount](http://hits.dwyl.com/koutsie/dotfilez.svg)](http://hits.dwyl.com/koutsie/dotfilez)
+
 
 # dotfilez
 

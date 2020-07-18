@@ -1,6 +1,5 @@
 [bar/mini]
-
-modules-center = weatherz paddingline date paddingline cpu paddingline memory
+modules-center = weatherz paddingline date paddingline cpufreq paddingline cpu paddingline cputemp paddingline memory
 modules-left = title
 bottom = true
 background = #F39A27
@@ -34,7 +33,18 @@ label = %time%
 [module/weatherz]
 type = custom/script
 exec = "curl -s wttr.in/oulu?format=3"
-interval = 720'
+interval = 720
+
+[module/cputemp]
+type = custom/script
+exec = "temp=$(sensors | grep -oP 'Core 0.*?\+\K[0-9.]+') && echo $temp°C"
+interval = 5
+
+[module/cpufreq]
+type = custom/script
+exec = freq=$(grep 'cpu MHz' /proc/cpuinfo | head -1 | awk -F: '{print $2/1024}' | rev | cut -c 3- | rev) && echo $freq GHz
+interval = 2
+
 
 [module/memory]
 type = internal/memory

@@ -5,19 +5,31 @@
 
 # dotfilez
 
-Updated dotfiles this time with sowm, qtile, i3 etc etc
+Updated dotfiles this time with sowm, openbox, qtile, i3 etc etc
 
 
 
 ## install:
 Install deps:
 
-```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git```
+```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git openbox obconf obmenu-generator```
+
+##### obmenu-generator 
+
+**Required dependencies:**
+
+> perl>=5.14.0
+
+> gtk2-perl (Gtk2)
+
+> perl-data-dump (Data::Dump)
+
+> perl-linux-desktopfiles>=0.25 (Linux::DesktopFiles)
+
 
 Install dotfilez:
 
 ```curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/Installer%20v2/install.sh | bash```
-
 
 ### Notes:
 
@@ -48,6 +60,8 @@ Install dotfilez:
 - imagemagick
 - redshift
 - kdeconnect
+- polybar
+
 
 ## Installs configs, not enabled by default:
 - i3

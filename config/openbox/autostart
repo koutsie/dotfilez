@@ -1,0 +1,6 @@
+# deps:
+#       pacman-tray tint2
+
+setxkbmap fi &
+pamac-tray &
+exec /home/koutsie/.config/polybar/launch.sh &

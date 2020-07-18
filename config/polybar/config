@@ -1,87 +1,45 @@
-[colors]
-background = #000000
-foreground = #ffffff
-primary = #fff000
-secondary = #e60032
+[bar/mini]
+
+modules-center = weatherz paddingline date paddingline cpu paddingline memory
+modules-left = title
+bottom = true
+background = #F39A27
+#background = ${colors.trans}
+foreground = #000
+tray-background = ${root.background}
+cursor-click = pointer
+cursor-scroll = ns-resize
+#tray-background = ${colors.grey-9}
+tray-position = right
+tray-maxsize = 16
+module-margin = 1
+font-0 = unifont:fontformat=truetype:size=9:antialias=false;0
+fixed-center = true
+
+
+[module/paddingline]
+type = custom/text
+content = |
+
+[module/cpu]
+type = internal/cpu
+label = CPU: %percentage%%
+interval = 5
 
 [module/date]
 type = internal/date
-interval = 1.0
-date = %r
+time = %H:%M:%S
+label = %time% 
 
-; Optional time format
-time = %H:%M
-
-; if `date-alt` or `time-alt` is defined, clicking
-; the module will toggle between formats
-date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
-
-
-
-[module/volume]
+[module/weatherz]
 type = custom/script
-exec = ~/Scripts/poly/volume.sh
-interval = 3
+exec = "curl -s wttr.in/oulu?format=3"
+interval = 720'
 
+[module/memory]
+type = internal/memory
+format = RAM: <label>
+interval = 5
 
-[module/weather]
-type = custom/script
-exec = ~/Scripts/poly/weather.sh
-interval = 300
-
-[module/battery]
-type = custom/script
-exec = ~/Scripts/poly/battery.sh
-interval = 60
-
-[module/updates]
-type = custom/script
-exec = ~/Scripts/poly/updates.sh
-interval = 600
-
-
-[bar/minimax]
-width = 30%
-height = 20
-radius = 0
-offset-x = 70%
-
-monitor=
-monitor-fallback =
-monitor-strict = false
-monitor-exact = true
-override-redirect = false
-
-bottom = true
-fixed-center = false
-background = ${colors.background}
-foreground = ${colors.foreground}
-line-size = 0
-line-color = #ffff00
-border-size = 0
-border-color = #00000000
-padding-left = 1
-padding-right = 1
-module-margin-left = 0
-module-margin-right = 0
-
-modules-left = battery updates
-modules-center = date
-modules-right = weather
-separator = "|"
-
-tray-detached = true
-
-tray-maxsize = 20
-tray-position = left
-tray-padding = 0
-tray-offset-x = 0
-tray-offset-y = 0
-tray-scale = 1.0
-
-enable-ipc = false
-
-[global/wm]
-margin-top = 5
-margin-bottom = 5
+[module/title]
+type = internal/xwindow

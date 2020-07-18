@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dotfilez by koutsie</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/koutsie/dotfilez">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/koutsie/dotfilez/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/koutsie/dotfilez/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Dotfilez</h1>
+          <p>gamer gamer gamer dotfilez using SOWM (Shit Opinionated Window Manager)</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/koutsie">koutsie</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><img src="https://raw.githubusercontent.com/koutsie/dotfilez/master/github-images/pfetch.png" alt="pfetch"></p>
+<p><img src="https://github.com/koutsie/dotfilez/raw/master/github-images/busy.png" alt="busy"></p>
+<p><a href="http://hits.dwyl.com/koutsie/dotfilez"><img src="http://hits.dwyl.com/koutsie/dotfilez.svg" alt="HitCount"></a></p>
+<h1>
+<a id="dotfilez" class="anchor" href="#dotfilez" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dotfilez</h1>
+<p>Updated dotfiles this time with sowm, openbox, qtile, i3 etc etc</p>
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>install:</h2>
+<p>Install deps:</p>
+<p><code>yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git openbox obconf obmenu-generator</code></p>
+<h5>
+<a id="obmenu-generator" class="anchor" href="#obmenu-generator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>obmenu-generator</h5>
+<p><strong>Required dependencies:</strong></p>
+<blockquote>
+<p>perl&gt;=5.14.0</p>
+</blockquote>
+<blockquote>
+<p>gtk2-perl (Gtk2)</p>
+</blockquote>
+<blockquote>
+<p>perl-data-dump (Data::Dump)</p>
+</blockquote>
+<blockquote>
+<p>perl-linux-desktopfiles&gt;=0.25 (Linux::DesktopFiles)</p>
+</blockquote>
+<p>Install dotfilez:</p>
+<p><code>curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/Installer%20v2/install.sh | bash</code></p>
+<h3>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes:</h3>
+<blockquote>
+<p>Brightness controls have been configured for an amdgpu laptop, please make sure to change those to match your own solution.</p>
+</blockquote>
+<blockquote>
+<p>Volume changing uses <code>pamixer</code> and only changes the current output, please make sure to edit as needed.</p>
+</blockquote>
+<blockquote>
+<p>Wallpaper changer uses unsplash's url api, please make sure to change it to your liking (currently: <code>nature</code> is used.).</p>
+</blockquote>
+<h2>
+<a id="depenciesconfigured-programs-so-far" class="anchor" href="#depenciesconfigured-programs-so-far" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Depencies/Configured programs so far:</h2>
+<ul>
+<li>flameshot</li>
+<li>pamixer</li>
+<li>wget</li>
+<li>curl</li>
+<li>mpsyt (mps-youtube)</li>
+<li>dunst</li>
+<li>git</li>
+<li>sowm (build automatically if using installer)</li>
+<li>feh</li>
+<li>imlib2</li>
+<li>xfce4-terminal</li>
+<li>sed</li>
+<li>screen</li>
+<li>bash</li>
+<li>imagemagick</li>
+<li>redshift</li>
+<li>kdeconnect</li>
+<li>polybar</li>
+</ul>
+<h2>
+<a id="installs-configs-not-enabled-by-default" class="anchor" href="#installs-configs-not-enabled-by-default" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installs configs, not enabled by default:</h2>
+<ul>
+<li>i3</li>
+<li>polybar</li>
+</ul>
+<h2>
+<a id="default-layout" class="anchor" href="#default-layout" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default Layout</h2>
+<p><img src="./docs/dotfilez-layout.jpg" alt="Layout"></p>
+<p><em>NOTE: default modifier is <strong>Super</strong></em></p>
+<p><strong>Window Management</strong></p>
+<table>
+<thead>
+<tr>
+<th>combo</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Mouse</code></td>
+<td>focus under cursor</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>Left Mouse</code>
+</td>
+<td>move window</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>Right Mouse</code>
+</td>
+<td>resize window</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>f</code>
+</td>
+<td>maximize toggle</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>c</code>
+</td>
+<td>center window</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>q</code>
+</td>
+<td>kill window</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>1-9</code>
+</td>
+<td>desktop swap</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>Shift</code> +<code>1-9</code>
+</td>
+<td>send window to desktop</td>
+</tr>
+<tr>
+<td>
+<code>MOD1</code> + <code>TAB</code> (<em>alt-tab</em>)</td>
+<td>focus cycle</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Shortcuts</strong></p>
+<table>
+<thead>
+<tr>
+<th>combo</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>MOD4</code> + <code>p</code>
+</td>
+<td>flameshot screenshot tool</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>m</code>
+</td>
+<td>mpsyt</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>XF86_MonBrightnessUp</code>
+</td>
+<td>brightness up</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>XF86_MonBrightnessDown</code>
+</td>
+<td>brightness down</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>XF86_AudioRaiseVolume</code>
+</td>
+<td>volume up</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>XF86_AudioLowerVolume</code>
+</td>
+<td>volume down</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>w</code>
+</td>
+<td>get a new random wallpaper</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>z</code>
+</td>
+<td>save current wallpaper to favourites</td>
+</tr>
+<tr>
+<td>
+<code>MOD4</code> + <code>x</code>
+</td>
+<td>get a random wallpaper from favourites</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="editors" class="anchor" href="#editors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Editors:</h2>
+<p>For nano: <a href="https://github.com/scopatz/nanorc">https://github.com/scopatz/nanorc</a></p>
+<p>For geany: <code>tango light</code> with <code>sourcecode variable bold</code></p>
+<h1>
+<a id="based-software" class="anchor" href="#based-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>based software</h1>
+<p><a href="https://github.com/cylgom/ly/">https://github.com/cylgom/ly/</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

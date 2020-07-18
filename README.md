@@ -1,4 +1,7 @@
-<img src="https://i.ibb.co/jGMg3Ym/bootifull.png" />
+![pfetch](https://raw.githubusercontent.com/koutsie/dotfilez/master/github-images/pfetch.png)
+
+![busy](https://github.com/koutsie/dotfilez/raw/master/github-images/busy.png)
+
 
 [![HitCount](http://hits.dwyl.com/koutsie/dotfilez.svg)](http://hits.dwyl.com/koutsie/dotfilez)
 

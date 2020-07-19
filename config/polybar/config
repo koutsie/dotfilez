@@ -1,6 +1,7 @@
 [bar/mini]
-modules-center = weatherz paddingline date paddingline cpufreq paddingline cpu paddingline cputemp paddingline memory
-modules-left = title
+modules-center =  weatherz paddingline date paddingline cpufreq paddingline cpu paddingline cputemp paddingline memory
+modules-left =  menu-apps pulseaudio paddingline title
+modules-right = 
 bottom = true
 background = #F39A27
 #background = ${colors.trans}
@@ -11,10 +12,13 @@ cursor-scroll = ns-resize
 #tray-background = ${colors.grey-9}
 tray-position = right
 tray-maxsize = 16
+tray-padding = 3
+tray-detached = false
+override-redirect = true
 module-margin = 1
-font-0 = unifont:fontformat=truetype:size=9:antialias=false;0
+font-0 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-1 = Noto Sans Symbols2:pixelsize=8;1
 fixed-center = true
-
 
 [module/paddingline]
 type = custom/text
@@ -23,7 +27,7 @@ content = |
 [module/cpu]
 type = internal/cpu
 label = CPU: %percentage%%
-interval = 5
+interval = 10
 
 [module/date]
 type = internal/date
@@ -38,12 +42,12 @@ interval = 720
 [module/cputemp]
 type = custom/script
 exec = "temp=$(sensors | grep -oP 'Core 0.*?\+\K[0-9.]+') && echo $temp°C"
-interval = 5
+interval = 10
 
 [module/cpufreq]
 type = custom/script
 exec = freq=$(grep 'cpu MHz' /proc/cpuinfo | head -1 | awk -F: '{print $2/1024}' | rev | cut -c 3- | rev) && echo $freq GHz
-interval = 2
+interval = 7
 
 
 [module/memory]
@@ -53,3 +57,31 @@ interval = 5
 
 [module/title]
 type = internal/xwindow
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume> <label-volume>
+label-muted = 🔇 muted
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+click-right = pavucontrol &
+
+
+[module/menu-apps]
+type = custom/menu
+expand-right = true
+format-spacing = 1
+label-separator = |
+label-open = [ Menu ]️
+label-close = [ Close ]
+menu-0-0 = [ -Social- ]
+menu-0-0-exec = menu-open-1
+menu-0-1 = [ -Games- ]
+menu-0-1-exec = menu-open-2
+menu-1-0 = ( Discord )
+menu-1-0-exec = discord &
+menu-1-1 = ( Mirage )
+menu-1-1-exec = mirage &
+menu-2-0 = ( CS:GO )
+menu-2-0-exec = xdg-open://steam://rungameid/730 &

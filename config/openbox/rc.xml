@@ -180,6 +180,16 @@
         <command>dmenu_run</command>
       </action>
     </keybind>
+    <keybind key="AudioRaiseVolume">
+      <action name="Execute">
+        <command>bash -c v=$(pactl list short sinks | grep "alsa_output" | awk '{ print $2 }' | head -n1);pactl set-sink-volume $v +3%</command>
+      </action>
+    </keybind>
+    <keybind key="AudioLowerVolume">
+      <action name="Execute">
+        <command>bash -c v=$(pactl list short sinks | grep "alsa_output" | awk '{ print $2 }' | head -n1);pactl set-sink-volume $v -3%</command>
+      </action>
+    </keybind>
     <keybind key="A-1">
       <action name="SendToDesktop">
         <desktop>1</desktop>
@@ -204,7 +214,14 @@
       <action name="Close"/>
     </keybind>
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
+      <action name="NextWindow">
+        <allDesktops>yes</allDesktops>
+      </action>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
+        <allDesktops>yes</allDesktops>
+      </action>
     </keybind>
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>

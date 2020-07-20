@@ -41,8 +41,13 @@ interval = 720
 
 [module/cputemp]
 type = custom/script
-exec = "temp=$(sensors | grep -oP 'Core 0.*?\+\K[0-9.]+') && echo $temp°C"
+# Laptop: sensors | grep -oP 'Tdie.*?\+\K[0-9.]+'
+# PC: sensors | grep -oP 'Core 0.*?\+\K[0-9.]+'
+exec = "temp=$(sensors | grep -oP 'Tdie.*?\+\K[0-9.]+') && echo $temp°C"
 interval = 10
+
+
+
 
 [module/cpufreq]
 type = custom/script

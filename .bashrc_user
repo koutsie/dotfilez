@@ -1,7 +1,26 @@
-#Information line:
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# alias ls='ls --color=auto'
+# PS1='[\u@\h \W]\$ '
+
 airtemp=$(curl -s wttr.in/oulu?format=3)
 dateline=$(date +"%d/%m/%Y")
-echo -e "\e[95m $dateline \e[39m // \e[92m $airtemp \e[39m"
+echo -e "\e[95m$dateline \e[39m // \e[92m $airtemp \e[39m"
 
 printf "\n"
+
+c=$(curl -s https://am.i.mullvad.net/country)
+i=$(curl -s https://am.i.mullvad.net/ip)
+IP=${i::-6}
+echo -e "🌐 \e[91m$c \e[93m $IP\e[0m\e[93m.\e[2m░░\e[0m\e[93m.\e[2m\e[93m░░░\e[0m"
+username="redacted"
+password="redacted [remember to use one time password, could be done better but mehhh]"
+mail=$(curl -u $username:$password --silent "https://mail.google.com/mail/feed/atom" |  grep -oPm1 "(?<=<title>)[^<]+" | sed -n '2p')
+echo -e "📧 \e[2m\e[96m$mail\e[0m"
+
 

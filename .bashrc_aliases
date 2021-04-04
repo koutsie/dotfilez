@@ -7,8 +7,8 @@ alias update='sudo yay -Sy'
 alias vup='$HOME/Scripts/vol_up.sh'
 alias vdo='$HOME/Scripts/vol_down.sh'
 alias wallpaper='$HOME/Scripts/wallpaper.sh'
-alias dl="youtube-dl -x -o '%(title)s.%(ext)s' --add-metadata --embed-thumbnail"
-
+alias dl="youtube-dl -x -o '%(title)s.%(ext)s' --add-metadata"
+# We cant do "--embed-thumbnail"... need to use picard but thats fine.
 # Hey, if you're reading this: please remind me to update these dotz.
 # Mon Apr  5 01:24:34 AM EEST 2021
 # alias ls='ls -l'

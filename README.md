@@ -2,6 +2,8 @@
 
 ![busy](https://github.com/koutsie/dotfilez/raw/master/github-images/busy.png)
 
+[![Hits-of-Code](https://hitsofcode.com/github/koutsie/dotfilez)](https://hitsofcode.com/github/koutsie/dotfilez/view)
+
 
 [![HitCount](http://hits.dwyl.com/koutsie/dotfilez.svg)](http://hits.dwyl.com/koutsie/dotfilez)
 

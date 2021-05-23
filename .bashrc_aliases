@@ -1,4 +1,5 @@
 #Aliases
+# This file is half deprecated because i list aliases in .bashrc now.
 alias power='sudo bash $HOME/Scripts/powermode.sh'
 alias cd..='cd ..'
 alias pdw="pwd"

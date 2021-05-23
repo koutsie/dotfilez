@@ -5,79 +5,111 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=0;y=0"/>
-      <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="true"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.668919"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="enter-opacity" type="uint" value="100"/>
       <property name="icon-size" type="uint" value="0"/>
-      <property name="size" type="uint" value="24"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="length" type="uint" value="100"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="9"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="23"/>
-        <value type="int" value="25"/>
-        <value type="int" value="7"/>
-        <value type="int" value="15"/>
-        <value type="int" value="16"/>
-        <value type="int" value="24"/>
-        <value type="int" value="20"/>
         <value type="int" value="26"/>
+        <value type="int" value="27"/>
+        <value type="int" value="28"/>
+        <value type="int" value="14"/>
+        <value type="int" value="19"/>
+        <value type="int" value="21"/>
+        <value type="int" value="22"/>
+        <value type="int" value="18"/>
+        <value type="int" value="25"/>
+        <value type="int" value="17"/>
+        <value type="int" value="16"/>
+        <value type="int" value="20"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
-        <value type="int" value="6"/>
         <value type="int" value="8"/>
+        <value type="int" value="6"/>
         <value type="int" value="10"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="13"/>
+        <value type="int" value="7"/>
       </property>
-      <property name="disable-struts" type="bool" value="true"/>
-      <property name="enter-opacity" type="uint" value="100"/>
-      <property name="leave-opacity" type="uint" value="100"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
-      <property name="background-style" type="uint" value="1"/>
-      <property name="background-rgba" type="array">
-        <value type="double" value="0.000000"/>
-        <value type="double" value="0.000000"/>
-        <value type="double" value="0.000000"/>
-        <value type="double" value="0.416107"/>
-      </property>
+      <property name="position" type="string" value="p=8;x=960;y=1067"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="24"/>
     </property>
+    <property name="dark-mode" type="bool" value="true"/>
   </property>
   <property name="plugins" type="empty">
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="show-qr-code" type="bool" value="true"/>
+      </property>
+    </property>
     <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="show-menu-icons" type="bool" value="true"/>
-      <property name="button-icon" type="string" value="tux"/>
-      <property name="show-button-title" type="bool" value="false"/>
-      <property name="show-tooltips" type="bool" value="true"/>
-      <property name="show-generic-names" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="archlinux-logo"/>
       <property name="button-title" type="string" value=""/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-generic-names" type="bool" value="true"/>
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="flash-separators" type="bool" value="true"/>
+      <property name="fuzziness" type="uint" value="2"/>
+      <property name="mode" type="uint" value="3"/>
+      <property name="show-meridiem" type="bool" value="true"/>
+      <property name="show-military" type="bool" value="false"/>
+      <property name="show-seconds" type="bool" value="true"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
-      <property name="grouping" type="uint" value="1"/>
       <property name="flat-buttons" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="1"/>
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-labels" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="true"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+    </property>
+    <property name="plugin-20" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-25" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
       <property name="miniature-view" type="bool" value="false"/>
+      <property name="rows" type="uint" value="1"/>
       <property name="workspace-scrolling" type="bool" value="false"/>
     </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
-      <property name="show-frame" type="bool" value="false"/>
-      <property name="square-icons" type="bool" value="true"/>
       <property name="names-ordered" type="array">
-        <value type="string" value="qcma"/>
         <value type="string" value="valvegames-region-selector"/>
         <value type="string" value="discordcanary"/>
         <value type="string" value="simplescreenrecorder"/>
@@ -97,49 +129,112 @@
         <value type="string" value="discord"/>
         <value type="string" value="networkmanager applet"/>
       </property>
-    </property>
-    <property name="plugin-8" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance10321;chromium.instance1042;chromium.instance1046;chromium.instance1055;chromium.instance1065;chromium.instance1098;chromium.instance1102;chromium.instance110943;chromium.instance1143;chromium.instance1165;chromium.instance1185;chromium.instance12143;chromium.instance1224;chromium.instance1278;chromium.instance1316;chromium.instance13882;chromium.instance1415;chromium.instance1455;chromium.instance146473;chromium.instance1529;chromium.instance1696;chromium.instance17350;chromium.instance18068;chromium.instance18992;chromium.instance1940;chromium.instance21848;chromium.instance2234;chromium.instance23473;chromium.instance31627;chromium.instance32495;chromium.instance40592;chromium.instance41181;chromium.instance5007;chromium.instance51970;chromium.instance5360;chromium.instance61097;chromium.instance67226;chromium.instance68925;chromium.instance72585;chromium.instance794;chromium.instance823;chromium.instance845;chromium.instance862;chromium.instance865;chromium.instance866;chromium.instance877;chromium.instance880;chromium.instance887;chromium.instance890;chromium.instance892;chromium.instance89917;chromium.instance912;chromium.instance92064;chromium.instance939;chromium.instance976;chromium.instance990"/>
-    </property>
-    <property name="plugin-10" type="string" value="notification-plugin"/>
-    <property name="plugin-11" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-12" type="string" value="clock">
-      <property name="mode" type="uint" value="3"/>
-      <property name="show-seconds" type="bool" value="true"/>
-      <property name="flash-separators" type="bool" value="true"/>
-      <property name="show-military" type="bool" value="false"/>
-      <property name="show-meridiem" type="bool" value="true"/>
-      <property name="fuzziness" type="uint" value="1"/>
-    </property>
-    <property name="plugin-13" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-7" type="string" value="xfce4-sensors-plugin"/>
-    <property name="plugin-15" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="false"/>
-    </property>
-    <property name="plugin-16" type="string" value="systemload"/>
-    <property name="plugin-20" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-23" type="string" value="cpufreq"/>
-    <property name="plugin-24" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-25" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="clipman" type="empty">
-      <property name="settings" type="empty">
-        <property name="show-qr-code" type="bool" value="true"/>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="anydesk"/>
+        <value type="string" value="redshiftgui.elf"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="mullvad-gui"/>
+        <value type="string" value="connman-gtk"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="vmware-tray"/>
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="hexchat"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="lightcord"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="steamautologin"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="Museeks1"/>
+        <value type="string" value="Mumble"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="Jellyfin MPV Shim"/>
+        <value type="string" value="gatsby-desktop1"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="lightcord1"/>
+        <value type="string" value="Mullvad VPN1"/>
+        <value type="string" value="mullvad-tray"/>
+        <value type="string" value="strawberry"/>
+        <value type="string" value="Nextcloud"/>
+        <value type="string" value="ckb-next_ckb-next"/>
+        <value type="string" value="KDE Connect Indicator"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="SimpleScreenRecorder"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="flameshot"/>
       </property>
     </property>
     <property name="plugin-9" type="string" value="separator"/>
-    <property name="plugin-26" type="string" value="fsguard"/>
+    <property name="plugin-7" type="string" value="actions">
+      <property name="button-title" type="uint" value="3"/>
+      <property name="custom-title" type="string" value="hybridbossa "/>
+      <property name="items" type="array">
+        <value type="string" value="+lock-screen"/>
+        <value type="string" value="+switch-user"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="+restart"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="+logout-dialog"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance1005;chromium.instance10093;chromium.instance1010;chromium.instance1041;chromium.instance1045;chromium.instance1052;chromium.instance1061;chromium.instance106101;chromium.instance1068;chromium.instance1073;chromium.instance1076;chromium.instance1082;chromium.instance10891;chromium.instance109046;chromium.instance109152;chromium.instance1099;chromium.instance1116;chromium.instance1119;chromium.instance1137;chromium.instance1148;chromium.instance1149;chromium.instance1150;chromium.instance11501;chromium.instance1159;chromium.instance11612;chromium.instance1162;chromium.instance1163;chromium.instance1165;chromium.instance116802;chromium.instance11691;chromium.instance1180;chromium.instance1199;chromium.instance12101;chromium.instance1221;chromium.instance1223;chromium.instance1227;chromium.instance12407;chromium.instance1259;chromium.instance1281;chromium.instance1282;chromium.instance1290;chromium.instance1295;chromium.instance1305;chromium.instance1309;chromium.instance1321;chromium.instance1327;chromium.instance1328;chromium.instance1331;chromium.instance13348;chromium.instance1343;chromium.instance1350;chromium.instance13854;chromium.instance1401;chromium.instance1413;chromium.instance1422;chromium.instance1433;chromium.instance1434;chromium.instance14378;chromium.instance14448;chromium.instance14670;chromium.instance1474;chromium.instance1476;chromium.instance1491;chromium.instance1505;chromium.instance1507;chromium.instance1509;chromium.instance1513;chromium.instance1531;chromium.instance1535;chromium.instance1573;chromium.instance1582;chromium.instance1583;chromium.instance1585;chromium.instance1586;chromium.instance162340;chromium.instance1649;chromium.instance1668;chromium.instance1689;chromium.instance1701;chromium.instance17099;chromium.instance1724;chromium.instance17242;chromium.instance1728;chromium.instance1748;chromium.instance1755;chromium.instance175971;chromium.instance17674;chromium.instance1768;chromium.instance1773;chromium.instance1775;chromium.instance1777;chromium.instance1806;chromium.instance1836;chromium.instance18510;chromium.instance186059;chromium.instance18635;chromium.instance1882;chromium.instance18953;chromium.instance18954;chromium.instance190692;chromium.instance1939;chromium.instance1943;chromium.instance1958;chromium.instance1990;chromium.instance20082;chromium.instance2017;chromium.instance2093;chromium.instance2128;chromium.instance21316;chromium.instance2157;chromium.instance219947;chromium.instance2200;chromium.instance22128;chromium.instance2243;chromium.instance23547;chromium.instance2363;chromium.instance23819;chromium.instance2395;chromium.instance2401;chromium.instance2405;chromium.instance2426;chromium.instance2446;chromium.instance24476;chromium.instance2449;chromium.instance24609;chromium.instance25219;chromium.instance25573;chromium.instance2573;chromium.instance259182;chromium.instance2593;chromium.instance27369;chromium.instance27526;chromium.instance2763;chromium.instance2765;chromium.instance27864;chromium.instance2799;chromium.instance2802;chromium.instance2846;chromium.instance2869;chromium.instance30164;chromium.instance3021;chromium.instance3047;chromium.instance30845;chromium.instance3206;chromium.instance33250;chromium.instance33338;chromium.instance34487;chromium.instance3496;chromium.instance35350;chromium.instance37665;chromium.instance39135;chromium.instance39458;chromium.instance40133;chromium.instance4298;chromium.instance43633;chromium.instance44698;chromium.instance44977;chromium.instance4613;chromium.instance46603;chromium.instance47706;chromium.instance48619;chromium.instance49050;chromium.instance50210;chromium.instance5329;chromium.instance53385;chromium.instance53495;chromium.instance5420;chromium.instance5623;chromium.instance56761;chromium.instance57158;chromium.instance5745;chromium.instance5845;chromium.instance5957;chromium.instance60437;chromium.instance6172;chromium.instance6173;chromium.instance6204;chromium.instance6282;chromium.instance636627;chromium.instance65103;chromium.instance6519;chromium.instance65726;chromium.instance65955;chromium.instance663494;chromium.instance6761;chromium.instance677;chromium.instance697;chromium.instance700;chromium.instance7022;chromium.instance70227;chromium.instance704;chromium.instance70510;chromium.instance70635;chromium.instance710;chromium.instance712;chromium.instance7202;chromium.instance721;chromium.instance730;chromium.instance734498;chromium.instance7346;chromium.instance740;chromium.instance7403;chromium.instance74276;chromium.instance7487;chromium.instance749;chromium.instance75199;chromium.instance761606;chromium.instance7632;chromium.instance7635;chromium.instance764;chromium.instance76465;chromium.instance770;chromium.instance772;chromium.instance7834;chromium.instance788;chromium.instance797;chromium.instance7984;chromium.instance801235;chromium.instance80665;chromium.instance813;chromium.instance817;chromium.instance820;chromium.instance822;chromium.instance822209;chromium.instance830;chromium.instance83190;chromium.instance837;chromium.instance846;chromium.instance8497;chromium.instance84983;chromium.instance861;chromium.instance8615;chromium.instance8639;chromium.instance865;chromium.instance8695;chromium.instance893;chromium.instance8988;chromium.instance899;chromium.instance902;chromium.instance902929;chromium.instance911;chromium.instance9256;chromium.instance930;chromium.instance935;chromium.instance94011;chromium.instance941;chromium.instance945;chromium.instance946;chromium.instance949;chromium.instance958;chromium.instance971;chromium.instance993;kdeconnect.mpris_0086f5bad7ea48808d37d36967af78c3;kdeconnect.mpris_00f35418a1d64e01b0e8707422fd6359;kdeconnect.mpris_014ff235c65249569e337755770a69f2;kdeconnect.mpris_0193fe220b684874bcd3b4dc34bee2de;kdeconnect.mpris_01a2355d3b0c47d6918de9d7a5701b88;kdeconnect.mpris_02b60d0960e34dd09fcfaa5cb41cdff3;kdeconnect.mpris_02d07a6acad04941854121f1960fb7fc;kdeconnect.mpris_03006c578175436d9c8e6146866d29a4;kdeconnect.mpris_0330db5541c74deb80b9860a486601a8;kdeconnect.mpris_056a762aa7f44f82b7fcb86bb4c449b3;kdeconnect.mpris_05a54ee19f5e47bea55c366680f6ed72;kdeconnect.mpris_05fbb572a05a489897bd429de860916b;kdeconnect.mpris_068db100747d4d218f2d99cf92dbedfb;kdeconnect.mpris_06c81a74af78486099ad662032f710f3;kdeconnect.mpris_073fc539778e452fb94e29aa40b27f2e;kdeconnect.mpris_0809e11696a1434880e9e9364fd55d0c;kdeconnect.mpris_087b7447fefe4930a1a0bcea37de42c8;kdeconnect.mpris_092158fd69954780b657d2f7bb1e4b81;kdeconnect.mpris_0a41050bd65c4008bc74ce912ce44e0a;kdeconnect.mpris_0a54917297ad48609610f874970b5f50;kdeconnect.mpris_0a95a40724bb41dbab0637f3a42446c7;kdeconnect.mpris_0aa0476a9fbe45158ec280dced0d8edd;kdeconnect.mpris_0af344457f044d77aaec82a0b63cb509;kdeconnect.mpris_0af89ff35fa144bc9343050214de8cd5;kdeconnect.mpris_0b8ded7e81844a5bade06162b450c5a5;kdeconnect.mpris_0be765af16e043bcb60c9ddf213ecd9f;kdeconnect.mpris_0c0920210a944da09b27333da4c23436;kdeconnect.mpris_0c24c8fedfc1463092fddd02c4cb1bfb;kdeconnect.mpris_0c4e8c03eaa84843a229ec14f8aad6ed;kdeconnect.mpris_0cc903d90c63465881d7417468e053a8;kdeconnect.mpris_0cf0b947e163463b877bfeef7807392d;kdeconnect.mpris_0d1f48713b1d45fdbea389c44712102e;kdeconnect.mpris_0d2150d983d8423981988470471e97a8;kdeconnect.mpris_0d6fde356dbe4481be298312ac8e42f9;kdeconnect.mpris_0e19ddde5e724d8dbb324d2c8587b42b;kdeconnect.mpris_0ec7318d1991414d9b4c8ed2a3323871;kdeconnect.mpris_0f71ff6f75cd42c08a8c18fcf698dacb;kdeconnect.mpris_1007ed487352418c8e9319c975bce864;kdeconnect.mpris_109fdfded38248bd93b74f5c6a55ee9d;kdeconnect.mpris_10d262e5cdc94f96b3a405064392ded8;kdeconnect.mpris_111afbc032554d428802aadeb1a23dbb;kdeconnect.mpris_11ad4d3bb3704eca8efec1886b674c09;kdeconnect.mpris_11df985f47d74b38b0e6ab79a0859052;kdeconnect.mpris_1241d39b035045cbafcf3d7d0eb8fffa;kdeconnect.mpris_125b49d93fc14c22862610c0bdeaa47f;kdeconnect.mpris_1350903e074e4a99b86900f0ceacbfeb;kdeconnect.mpris_138df3b2a7eb4024bfe625c913acab19;kdeconnect.mpris_13cf33efd59e49569f2646264bf40ee6;kdeconnect.mpris_1415149a5c6b47d3be33ff46e75e3c2f;kdeconnect.mpris_14511e24bf8e4f7e9babaed7238329af;kdeconnect.mpris_146153cca4f04cbdbb17e944cce2a04a;kdeconnect.mpris_14cefde65aae444dbc7b535df797a7d0;kdeconnect.mpris_14e0ee82fa0443f48f9cf8432f947ee1;kdeconnect.mpris_14eccdbd12544aefbeca33f3cc0e4de6;kdeconnect.mpris_15a8e4508d2c4c76aa421fa4bce9dd24;kdeconnect.mpris_1689c4095a5d4349ba07cc5fe31c4cec;kdeconnect.mpris_17aadb4d38ea459d9cb4867ed6246afe;kdeconnect.mpris_191e5271cad64163a734667eb9c5d857;kdeconnect.mpris_19572224d83a4bcf9f96c9b67c8b8815;kdeconnect.mpris_1971777c92584344ac7a2640f2dd7bbc;kdeconnect.mpris_199ffc4b8f054fe6b3515b1219d6a9cb;kdeconnect.mpris_19ffcf6fb1f54bab9a4b30e29223cda6;kdeconnect.mpris_1ac5d81a1aed4cc8a8b452f6c04f807d;kdeconnect.mpris_1aedb40328e64e56a06a60e26bf78b73;kdeconnect.mpris_1b10c08641914594bf82e3e635095354;kdeconnect.mpris_1b42c3de194249debcac057806f596ea;kdeconnect.mpris_1b8b1e125ac34ad9a392e3427ba89ee5;kdeconnect.mpris_1c13cbaac74c476e9a4c02f1b6f03142;kdeconnect.mpris_1d9a574695b84250b336a9904d3a765e;kdeconnect.mpris_1daa5e7114034d188ed59bd56d50b9cb;kdeconnect.mpris_1dc33ec20b154399aeba5143a5b46978;kdeconnect.mpris_1e2036c68f3f4c3c9cc3026c76ceffe1;kdeconnect.mpris_1e7d8c0f8af84c4fa7ddd1faf578b2a7;kdeconnect.mpris_1e82a2e3b3504747b0af81e64e9b87e6;kdeconnect.mpris_1f2e064783a841e6b16e43c4e4767d4c;kdeconnect.mpris_1f42ecdd57b84a78b854884af22edafd;kdeconnect.mpris_1f994522120b4ce8abac54bdf31fe9b5;kdeconnect.mpris_1fb64d3fe5d5410ca6e1530dccb888de;kdeconnect.mpris_2177c305e50c41a7937045b8ac6601cd;kdeconnect.mpris_21a68943d7de4b7cbb07db0b755bd086;kdeconnect.mpris_2304b79dbdee405bbab45fbe1ee61cd3;kdeconnect.mpris_236a83688847423cb0dc78ab82f016e3;kdeconnect.mpris_237829ecb3574760a8a63b6874a842af;kdeconnect.mpris_23da11d645fe4930bc12c0ba52f82669;kdeconnect.mpris_24622523c9894072a43ae9f6e6ecc9ab;kdeconnect.mpris_255e4cacdf04495ea4e0c52c03fc759e;kdeconnect.mpris_2565458c5e77498da8312e10c1dc1b6a;kdeconnect.mpris_26306de6e19e4465889da96b8699e778;kdeconnect.mpris_264fce0639ba4088a207624610e842d5;kdeconnect.mpris_2666547c57ce46b9858e7e75d68b87b2;kdeconnect.mpris_273d03f483844fe593dcc5c6b48388d0;kdeconnect.mpris_279ae3d9adc94ef6bb06daf613cfce27;kdeconnect.mpris_27d7619c13c748748e01615b8cc2611b;kdeconnect.mpris_287f1c7683834ebfb093dc94c9b06fa8;kdeconnect.mpris_2899f71108e74010ab74659fe3f60e72;kdeconnect.mpris_28f63a68f0394807ba81274040a6db20;kdeconnect.mpris_2940291323054d5e8dfd335d15d2dcf2;kdeconnect.mpris_295bcaa434db48d8bfc6ea815e4e4752;kdeconnect.mpris_2a00cfb2fb334f39ad6a4602fc0f1d74;kdeconnect.mpris_2a26352dd6764ff99435a154c7c306be;kdeconnect.mpris_2a2f9da50da7477ba62def4765b15405;kdeconnect.mpris_2a633ef6cc8b45ff952365c02fd5ebfb;kdeconnect.mpris_2a79841402b044f2955ac345430d2480;kdeconnect.mpris_2a90e0adfaaf427abb77fb49b8f87262;kdeconnect.mpris_2ad9f5ad02f84355937fe5221a515ecb;kdeconnect.mpris_2b235293d61744e6993ed380ddbb9fe8;kdeconnect.mpris_2b3cc3d5ba49485a98507fa8306b4ffa;kdeconnect.mpris_2c0edae9cc5a4e9cb37987549b1c0680;kdeconnect.mpris_2c2d6a169cc44e87bd86da4f13332e9f;kdeconnect.mpris_2c43cdea356b4db3bef846311473566e;kdeconnect.mpris_2c87ad8786f9493f80b512664a750268;kdeconnect.mpris_2ce5a809f77f448fa88aaef20366ee93;kdeconnect.mpris_2d757a82d2f447069dbc54f11e2ccc4d;kdeconnect.mpris_2d9e234b8d894afcb100a6de7e973d45;kdeconnect.mpris_3132bb18fe3249f490dfec506e9a7e6a;kdeconnect.mpris_319c022106ce4e7592c9a8667376a478;kdeconnect.mpris_32223e4cd4db4658910d0e35c5638cee;kdeconnect.mpris_329ab4181a1a4c1bbbac1d1f5f9bb166;kdeconnect.mpris_332adda08436482c88c8aa9dcd0b2a9b;kdeconnect.mpris_34c44838b66248ff860e20fca97749a3;kdeconnect.mpris_3508903beacd4e7cb631163c7f1c4afd;kdeconnect.mpris_35891870170444078c4c5f89b14483e7;kdeconnect.mpris_35b8f8d1bb654bbd9d9be48788864a26;kdeconnect.mpris_35f416cd4ccf4558a433af4d994358b8;kdeconnect.mpris_36100d2c8b5c4dc49c19bf4c9de2b689;kdeconnect.mpris_363267292cc44494bb12e94faa35d8dd;kdeconnect.mpris_3643924a1bd149c1b49493e69067cc86;kdeconnect.mpris_3674f6b88da14567b57ed799591f4916;kdeconnect.mpris_36cef9a0af0f40bc9242b1991f6e3c58;kdeconnect.mpris_36fff578f3bd4cc8844a028ee8e6378a;kdeconnect.mpris_376a6d9fdbb94d74ab54f1c01fe59cd3;kdeconnect.mpris_37d9b70b9edd49508f18d198e70047f5;kdeconnect.mpris_3870dc2e934c45ec95b69fcadb13098d;kdeconnect.mpris_3881ea55bed9491c9dc29d15c16abfda;kdeconnect.mpris_389953d4857b4a7dad25e9b4b98e56df;kdeconnect.mpris_39165075a4b94efb992eaad82bf4f06a;kdeconnect.mpris_39fe6721db0a4102bfd630f26dd915d7;kdeconnect.mpris_3a48cf1e1fdd4c8485248e6f606965bb;kdeconnect.mpris_3b3af40a90b64f69b6524a8eb7e098fd;kdeconnect.mpris_3b836615fd9b4143980ffc6ea0e83d6b;kdeconnect.mpris_3c7f6605189f44d0a045af646c506885;kdeconnect.mpris_3d0d25ccaec54addacb53bfb0c72a18e;kdeconnect.mpris_3d13285ef7e8440c9e02885fef108d59;kdeconnect.mpris_3d87fe0165834ab5a84e50a14d02f365;kdeconnect.mpris_3d9740a100a247639df1d940b7398d6e;kdeconnect.mpris_3e0793e643e34f26bb755d3d73d11b1f;kdeconnect.mpris_3e2d0bae082a46029dfb63aeed0622e1;kdeconnect.mpris_3e7146cd10aa4d50bd16065b4f83b2e9;kdeconnect.mpris_3ea58c2a3d1c40ebb4251a51668fcef2;kdeconnect.mpris_3f3fb0708a86471da9d7ee786cd33551;kdeconnect.mpris_3f87e5a61d2246e1a3650be7d9ec27fa;kdeconnect.mpris_40573398033e493cb42605e7cec6e7b5;kdeconnect.mpris_4063ed2e4ab4408cb2253c1daad80076;kdeconnect.mpris_4165391023294fb8bfcad5505a344c81;kdeconnect.mpris_41bc978482e64829afd8bea1f58ac2d5;kdeconnect.mpris_4201ed5d5687478aae6d857bb02fc667;kdeconnect.mpris_4215650b0ec4478da48e442922f522ec;kdeconnect.mpris_42316aa626214dfea92833abac67f7e4;kdeconnect.mpris_42464d01e26740498ae123475f30e0a5;kdeconnect.mpris_42b370f4682545298573e7a73debb3b9;kdeconnect.mpris_43b41869bdaa4003882173528ab4ab84;kdeconnect.mpris_43fe2121d09a47d0af516ed7dac5b92d;kdeconnect.mpris_44cb149c7c204070941d4b6bcb0c0f98;kdeconnect.mpris_458ce489d32d4c21806f07ddf1d9a76a;kdeconnect.mpris_45b8fb8ec66e44669a1e3be09c5d03ea;kdeconnect.mpris_45e01f485f6a4723b484c1e239b2c4ed;kdeconnect.mpris_477efeb242d44c6188cfe5f43a40bf74;kdeconnect.mpris_47831f5d85414a28989cd59ee524f00f;kdeconnect.mpris_479d0d4818ad4c20b29696a09ec1dca1;kdeconnect.mpris_482e459566d84e4f81195879e24d8668;kdeconnect.mpris_487e7ab7dae649c18c453fa11099474d;kdeconnect.mpris_48b4336c248d4bf89a34401479d95910;kdeconnect.mpris_48d03ca1a5f64354b09fa88eeb67c4cc;kdeconnect.mpris_49964c3dcc704ec194645c0ad978e00c;kdeconnect.mpris_4b02cd653bb3490aa262f6dd7ec4b3ea;kdeconnect.mpris_4b2389c744fd43e4a7cab308dd4d2173;kdeconnect.mpris_4bb4d59d58e5412a9e7b0d59b194439d;kdeconnect.mpris_4cc8936a5f7b4480b4d4ddda2ca91365;kdeconnect.mpris_4d1b4d24fc844248a33f8aff10335f2e;kdeconnect.mpris_4d4f42788196472b8821e20b69a28f96;kdeconnect.mpris_4df3ba1e71a244e681b9e84f25cd488b;kdeconnect.mpris_4e0c8c18ec5b4f58b407426ba7d2e643;kdeconnect.mpris_4f552f77765e482c9ab4c2b7e26d9cea;kdeconnect.mpris_4f853d1b30444bffb36dd29528dc0b1a;kdeconnect.mpris_4f8b1187367e49e7b94313ab88a3ee9e;kdeconnect.mpris_4fbb518612d844e19b52a09afc4e7056;kdeconnect.mpris_5002eb9f77974bfa90fedf33935a3e0c;kdeconnect.mpris_51ab34e6892b44e7b88295302c921635;kdeconnect.mpris_522ec56510c24d34b14dbae17f246962;kdeconnect.mpris_527172fb9ac24ffd83371aa00f2f5e5a;kdeconnect.mpris_52849d36092d4f208ebb69e1541f666d;kdeconnect.mpris_528b4932be3043e789fecd04da1589fd;kdeconnect.mpris_5319dfd45654406b81f0901e86ee81fa;kdeconnect.mpris_531d44c8b63a456bac0a2f736343fbc5;kdeconnect.mpris_53c025a8e9e242c2a1fa32e9bd32ac5e;kdeconnect.mpris_53d0ca94accb44e987d8bb1a21833b52;kdeconnect.mpris_53e6ba60446f472282d4d7a3a6caaf98;kdeconnect.mpris_54125c2fe7a4435c80594a2e73fb94cc;kdeconnect.mpris_541dfdaa4e71484ebb3ba25395fb771f;kdeconnect.mpris_545efc3211d24e36b0c51976c0f35066;kdeconnect.mpris_546c30fa6b4c46c9950d4cdd79c1029d;kdeconnect.mpris_54b950555bbc493c99d632490bd5b53f;kdeconnect.mpris_54e15ab45e394eaf8197df004488ea67;kdeconnect.mpris_5594ece7d4f446b5bc44bd3eb7cc442e;kdeconnect.mpris_55c3c59deecd47a89707539532583147;kdeconnect.mpris_56575f0ad0514fceb654fee6797aa7b7;kdeconnect.mpris_569c715d83ec48529f223accd9cac772;kdeconnect.mpris_56ee6b33ee6e4cecabcbd4757a5227df;kdeconnect.mpris_5740487682a84b44aba27ae46f056d8c;kdeconnect.mpris_574789d8c1024432aac6cb1f89440ad7;kdeconnect.mpris_577a2d63efa2433f9327f8a19ab7d336;kdeconnect.mpris_5780c869d8c949fdbd9900670d31fcb6;kdeconnect.mpris_578663540f1e4492827d3c56b895fc81;kdeconnect.mpris_5876aa864e614ad0a74729c1a5208e12;kdeconnect.mpris_5941a557539b40ff80b1ec3ff0f72f1d;kdeconnect.mpris_59d3a510f6bb443d855e77bd6ad72d39;kdeconnect.mpris_5a59cd99c1524ab1a5bb7199697763e8;kdeconnect.mpris_5a81dbc2100c412d992b49ab8242f330;kdeconnect.mpris_5bb7ca0b81e840e9a235a4dbdea229d4;kdeconnect.mpris_5c059d54c8064bbaab873cd2d0a13a8a;kdeconnect.mpris_5c076cf7d6a241d6a2371cbbd6660218;kdeconnect.mpris_5c4304e455304c1ca6703705c5f29365;kdeconnect.mpris_5d00f878d1ad479e932c3719a4d262bd;kdeconnect.mpris_5d072e61d69940e6a57028f80cf794ea;kdeconnect.mpris_5dd93ccd12ea432eb0d3d4ad3a26f55d;kdeconnect.mpris_5df5772a55b44c04bbcd90b4af5e30fe;kdeconnect.mpris_5e056e9eb2e044c886180157ddc8a979;kdeconnect.mpris_5e7450696cea421aafd09ee6fda7b63b;kdeconnect.mpris_5ee46964bd2546c99a4bb2148d62bf95;kdeconnect.mpris_5f200b89529a47578e7401d2db37b159;kdeconnect.mpris_5f36c74ae747434393951b9aa0864d3f;kdeconnect.mpris_5f376dfab57d4c8984c111787c687c48;kdeconnect.mpris_5f39b58c059b41afa0310916002ef683;kdeconnect.mpris_5f6d6755166e464a947256b5d632ae71;kdeconnect.mpris_5fb2c99aeb1d4947b1d27f0831cb61ce;kdeconnect.mpris_60a0bc9d370c44289dd35e03a323f05f;kdeconnect.mpris_61545acf269f4f6f9de6b2851c99d43b;kdeconnect.mpris_615e74c22cd441558375c246e88e01eb;kdeconnect.mpris_61ac73cdd3b54101a24e980835fae033;kdeconnect.mpris_61f069f5356a4ae29affc0a9a74c02c6;kdeconnect.mpris_62476de2de4c45479409625339659b79;kdeconnect.mpris_62a378e8fd9b4a70852fc075262523ab;kdeconnect.mpris_62eca1d1badd4507a006109ea872d00b;kdeconnect.mpris_63acd8b0cf4c4c3c9893d5179a28b7b4;kdeconnect.mpris_63b8f5c8686d42038f8294c075480a51;kdeconnect.mpris_649022999fa84877b3931967d817df4f;kdeconnect.mpris_6518fc5ed2824076b61e31f969084788;kdeconnect.mpris_658ceb043ddd4a4fbd67d1554e725d2e;kdeconnect.mpris_65a2d50bf30549c9aa6999ff89549e62;kdeconnect.mpris_65cb81b5901849dda332d22e225f5833;kdeconnect.mpris_66ef27f7fd534e6ca9a7cf5052ce4d33;kdeconnect.mpris_6721b4799916469c9077c3b07da4ae0d;kdeconnect.mpris_67516f44683a4461833964d3d4eed4bc;kdeconnect.mpris_675adf1cb462417a9fb2401fcf5762c4;kdeconnect.mpris_67db6422470c45698530ddd0639a7c1e;kdeconnect.mpris_680255c6dee841b4970660cbb650d74b;kdeconnect.mpris_6815a47a13c14abe884ffc0ec08c040b;kdeconnect.mpris_692071e36c554d07a6531952f55147d1;kdeconnect.mpris_6a735e483ff64506be18da3ab56a3fe9;kdeconnect.mpris_6a8330193015451480cede71b8847ea4;kdeconnect.mpris_6b70ecc47b6a440abf2bf206874823b9;kdeconnect.mpris_6c85c9c1e1d54beb984e3d2ece7e1d2f;kdeconnect.mpris_6cc21602a907453d8e5f613e90bcb153;kdeconnect.mpris_6d1e830253a347c299e96193a9908491;kdeconnect.mpris_6dd836a80ec4413980cdd7e3d74a960b;kdeconnect.mpris_6f010a6c823d4fbeb6d9d0bf19eb26f5;kdeconnect.mpris_6f8851432e1443a2bde46cb3955e30e6;kdeconnect.mpris_6ffb87af946342f8a30593214b4b4788;kdeconnect.mpris_70d7c279600949a6a6e093567ebc1621;kdeconnect.mpris_70f2e901abf4444a8138eca23a144d23;kdeconnect.mpris_715eea5649334069b876973940ffa24f;kdeconnect.mpris_71df436ae2e24c438f49c696322fa18d;kdeconnect.mpris_71f0d5ef5e1b45e4881fe3834ce091c7;kdeconnect.mpris_728c9adf6a994b699bc8a70bba87ee4b;kdeconnect.mpris_72af0aa8fd9a4dfbad3a0d6e3618c65a;kdeconnect.mpris_72b87d898dbb4bd8820bd59e13da9fa3;kdeconnect.mpris_7331531b350a4317bbc612f1ab030953;kdeconnect.mpris_73d6f9bad02348b2bef603c81e3812ea;kdeconnect.mpris_744f91338a8b4acea5e9cd679b8d52a7;kdeconnect.mpris_75967da6712344d3a5fe5682b6a690d5;kdeconnect.mpris_75d0f227e86e460cb6575b73b0d4af37;kdeconnect.mpris_75db2ecc57cb463dae76ce2acf41a404;kdeconnect.mpris_7673040db17745339ba81e6fdb289ea3;kdeconnect.mpris_767b86f7a00c40a3ac304219ee194ca9;kdeconnect.mpris_76baa17bb7724d5c8ceeccde4b7f4858;kdeconnect.mpris_777b89ab5b5540fabfc44272ca20c00d;kdeconnect.mpris_77a9fb8aee7f42a281b0280f9a4e09a0;kdeconnect.mpris_780d8354d8f744f29b7d1d1e11bc5b66;kdeconnect.mpris_780e8ed329644995bd02144766482592;kdeconnect.mpris_78136371ed9e4d0f953e31ae57173466;kdeconnect.mpris_781e1b2c3f8f47c3b7f2893d7d7c1353;kdeconnect.mpris_785bebe393aa40dabc2c02de77a35ae4;kdeconnect.mpris_788b2e14793d4f1aa3353122b844813c;kdeconnect.mpris_78e44a91c89542d78a070698fc1e67ac;kdeconnect.mpris_79060f045bae4b5891d50a54d1959ce6;kdeconnect.mpris_795e318232f7456f81d01da2985248d8;kdeconnect.mpris_7a347efee53c46ca98fc4c21ed08ff4c;kdeconnect.mpris_7a4c97cd03d54601a60fada001f57b27;kdeconnect.mpris_7b0a53cb4f414852964b1a94c2ddf744;kdeconnect.mpris_7b3a5c7bbd4f4d1b8a1c85958ee186dd;kdeconnect.mpris_7cdae9271b0c453ca6a663899391105d;kdeconnect.mpris_7d36c81c7a31464b878e6ec1ce9083c2;kdeconnect.mpris_7d48f462370c474a81d833799d45d158;kdeconnect.mpris_7dc4d149f670471094abe8c3e1485e35;kdeconnect.mpris_7ec6ffc9b13d44c79102795ed76434c0;kdeconnect.mpris_7f6106de1e4f409799aa86bf7f261ec0;kdeconnect.mpris_7f8301f63e1449acb6e396833307d40c;kdeconnect.mpris_7fcec92d380b4ba58f6b556903baa205;kdeconnect.mpris_7fd85dd822ec49c9b7ff19cd678f3565;kdeconnect.mpris_7fffd0fc568141909675595a6bcd3a14;kdeconnect.mpris_7fffd1c491644e86aaf40ef410d9ebb8;kdeconnect.mpris_8012492f476d4e8d9a40e61aad7ebac1;kdeconnect.mpris_8027fe858be74a9f96ef4aed62cd651c;kdeconnect.mpris_80ccac72ee33432ca4c54508f12a7ccf;kdeconnect.mpris_8111f1b7f6bd4de2b7b340b23c348194;kdeconnect.mpris_816d6055b9044c75a42db1d1bd678f21;kdeconnect.mpris_8178af65b1114a5bb320834e3819e7ff;kdeconnect.mpris_818389d6205c40bdb506ebd67495c5b9;kdeconnect.mpris_818c148e5cee48da994d87c29895a978;kdeconnect.mpris_819ca7ddb8174ac8885035e0164bd9fb;kdeconnect.mpris_81a60d4e7dce4ed8aa32a5511484d759;kdeconnect.mpris_81bd9302e4164f4085a0041310776a8e;kdeconnect.mpris_81fdc14cec264b34811d3095ce228309;kdeconnect.mpris_82714d41871449f794458f50c23dbb0d;kdeconnect.mpris_829499216bc7434591f130168dae3c75;kdeconnect.mpris_82b6d07de7f247c98b6009b61b62084a;kdeconnect.mpris_82c1bd9d9877459496878ba719cf6fcb;kdeconnect.mpris_82c7f4343969407d87bb27810d54aa02;kdeconnect.mpris_842ac6338ef84af68792d1bf277ed02e;kdeconnect.mpris_8532aa6d3a074847bedc873a08fd32cc;kdeconnect.mpris_85b3ee9c300748c0ad8722888ac0be36;kdeconnect.mpris_86623031529f4bf7a7795ec399545da3;kdeconnect.mpris_86b96debd26840379fa1f3915c18b00e;kdeconnect.mpris_89413afc21994401997192596a6d5c1e;kdeconnect.mpris_8a549bce631f4faf96a16c2c546068ef;kdeconnect.mpris_8b763ccb5cf9477391107382af1313d8;kdeconnect.mpris_8b9ff855abac4bfea34bfc1cf67a41d8;kdeconnect.mpris_8becd4433986442ba4e368f0dff54e90;kdeconnect.mpris_8cc141f7a2684bfdb68854c01f17e7a3;kdeconnect.mpris_8cd2d19ffb05452dbe1e58318fc571b6;kdeconnect.mpris_8ce75c7386884c2b9f80eedce8928ec9;kdeconnect.mpris_8d2b2bb9163c40c3af60369ed03022a9;kdeconnect.mpris_8d4d45f3b2ae4b07b560fa0e6c0ce474;kdeconnect.mpris_8d99671da36b48c0b77edc67efa5e343;kdeconnect.mpris_8db4062364d64296b26c46940829504f;kdeconnect.mpris_8edd8a0da9f54ba28642d4788ff8893e;kdeconnect.mpris_8f0d04cb19794281b8703d576d014322;kdeconnect.mpris_8f72756b623c4567bb0b58171f55ac7d;kdeconnect.mpris_8ffecb3404344e17a0ed53d135602a46;kdeconnect.mpris_8fff19d6dd9b431c919185edc2ca27cc;kdeconnect.mpris_9043de12beee4e76aadf63a532ff4a2f;kdeconnect.mpris_9057363fd9a54078a1fc58a4a010f36b;kdeconnect.mpris_910307aff949418ea68ef6a5313588d9;kdeconnect.mpris_911f966655c0422f843252538d1d852b;kdeconnect.mpris_922f008a67be4f57ac87a47363889a49;kdeconnect.mpris_934f715939b24de28c58b206179adc6d;kdeconnect.mpris_9382ba9125a24e4eabad048651150dd5;kdeconnect.mpris_93f33f43e972437f9b9c1b37c3d552a6;kdeconnect.mpris_94612a063c844492bfb9a0711b0e829c;kdeconnect.mpris_959443d2424e46db9d0c7971cb22168f;kdeconnect.mpris_95b2795acd38464fbc0f59546dd10393;kdeconnect.mpris_95e731e0651c480eb2b1915cd8633628;kdeconnect.mpris_962831f7fd7248259a40e4d4adb4b852;kdeconnect.mpris_962e7c051bbc4be8bf9f664d87f50406;kdeconnect.mpris_989ba154b2d549dba3d424a5098239e2;kdeconnect.mpris_98df8346af9c44e693f9723d9c2ca63f;kdeconnect.mpris_98e8b9a25f2b45faae37503766558b23;kdeconnect.mpris_99596c44b0064d34ab30d0f59259b127;kdeconnect.mpris_9969ccd39db74b6f931b79487a9971e0;kdeconnect.mpris_99cc6af9e2624b7aa1fef682d6a6f787;kdeconnect.mpris_99df1ab2419943bca346344d5ad27e65;kdeconnect.mpris_9a86c258a3ab420e9280e58448fe43e0;kdeconnect.mpris_9bb47901e7e3499aad283ad62b372fc3;kdeconnect.mpris_9bb9c24f586b40ad93d7589448883e24;kdeconnect.mpris_9bbc4161f8d742059b8b043a96b1cada;kdeconnect.mpris_9d054a698b8d4cbf954dd67aa3ea7e1b;kdeconnect.mpris_9d0dd7f26b4c4a8ca40cdea6bc14a7e3;kdeconnect.mpris_9d7f5c4bc7a74ae1b777c5bad8fde2e3;kdeconnect.mpris_9e2303b83e3c42a89bc1c21206918771;kdeconnect.mpris_9e7288aba820418c82366d73b2739c91;kdeconnect.mpris_9e7bb7be071f4d90aef9bb59c19374ef;kdeconnect.mpris_9f1f956a2f3342589bf73c81f5e4c415;kdeconnect.mpris_9feba8ad2364419c9f97bb582f7727b9;kdeconnect.mpris_a000733f2c6440a68d48a19ad2fdf9ea;kdeconnect.mpris_a0224690056b4ad4b7dacab07b4c712b;kdeconnect.mpris_a04ad8eb7b2b4a18aa99e5b3ebe8393d;kdeconnect.mpris_a0dc5a1d5d52486ab68acdd0980e1b84;kdeconnect.mpris_a171f546d9f94a3ab2015863dcc5eba6;kdeconnect.mpris_a2e55f525f174bc69635649b78859528;kdeconnect.mpris_a35705743eaa4bb4a9d24b947b991704;kdeconnect.mpris_a3d5689d4cf34af7b5dfeac5cefb9044;kdeconnect.mpris_a480a1f9e5d54d2d99dfca3a998bbaa2;kdeconnect.mpris_a6948f81d5d349d59204a27d3eb381f2;kdeconnect.mpris_a71fbb5d0e584bed8ec5c69a0e0543b7;kdeconnect.mpris_a72612b04b71445daf7215b193008e84;kdeconnect.mpris_a73f65b15e8f42be885a2690a36e15d0;kdeconnect.mpris_a800dc9819fe46c79a4b267276d58c78;kdeconnect.mpris_a81c861ac9b749e790db627f1d564ac6;kdeconnect.mpris_a88e25e35f514b89af2abc82fb733555;kdeconnect.mpris_a88f9e721a1341e4ac04850db19af0b5;kdeconnect.mpris_a912b1204dcf40f888c63581c6c5a543;kdeconnect.mpris_a91e606004f84b8485602f4e6ccfd0ae;kdeconnect.mpris_a94f41cf4eeb493d95ffc6e0908970cc;kdeconnect.mpris_a95c8c3941154b94b63aa9f602376017;kdeconnect.mpris_a961a8980e5e46f49d5332f9cfbe6727;kdeconnect.mpris_aa34fcbb85334c7bbe68c95ae9a32161;kdeconnect.mpris_aa399286f9b44a04a846fb394e454b53;kdeconnect.mpris_aaaabe83197a4c9e80495610ce53dfed;kdeconnect.mpris_ab1f11afe3ed48c19e7c3bd9f5daa7c1;kdeconnect.mpris_ab82fdd66a794418959c99ccf1dc6f0d;kdeconnect.mpris_ac2fe99bcecd476e8de524fd08fdca9c;kdeconnect.mpris_ac8af808c67445bbaf86b170e4e71809;kdeconnect.mpris_ad110efccb274237a5b2059daafa6356;kdeconnect.mpris_ad5267ff98694eda812b0102ee1ce7a1;kdeconnect.mpris_ad56e53427c646c59a94425bee5a598e;kdeconnect.mpris_ad6e11d4d0e54c529bc12e8426ea1e0d;kdeconnect.mpris_adc4719b324a4f79862aaa47aa630b17;kdeconnect.mpris_addd0b48c936476684b19d108b9fc69b;kdeconnect.mpris_ae2c0708f0ac423eb715ac1a2d12d4cb;kdeconnect.mpris_ae7869a238044d52a4255dd40368d6e7;kdeconnect.mpris_aea4df7efc4e43979b0c0cd8de595110;kdeconnect.mpris_af3267328c3f4910a480382d8089fbd4;kdeconnect.mpris_af9beebefc3342829e4b4466b7ccdf55;kdeconnect.mpris_afabf0b5af2340ac8e56143286ae08a6;kdeconnect.mpris_afe9d65cca5a482d85a99c1bffd6a345;kdeconnect.mpris_b0214923522846e694401a680f4f0000;kdeconnect.mpris_b06d436197f94747a762656def1d62d1;kdeconnect.mpris_b12c842db4c245daafe14259d0fd2a7f;kdeconnect.mpris_b194a49c2e754654ba57ec0b51bb56e9;kdeconnect.mpris_b20ede654356455496df6670f854b706;kdeconnect.mpris_b2749f7445c94489b346b7bd20c8d207;kdeconnect.mpris_b28f66d09bd04bb4981282974b7eb3a4;kdeconnect.mpris_b293427b511b4c53a877bc8057af81c8;kdeconnect.mpris_b379af66815e42b7b0b8f178dc41f907;kdeconnect.mpris_b37a63ac27bf4f5f80a2554b02c592d4;kdeconnect.mpris_b3e20ef656504a2ab58591c8841bfcf4;kdeconnect.mpris_b40a8031d7044c3fa305c31613e4ee3d;kdeconnect.mpris_b40e21c76fec48568202cbcd96aa1b3c;kdeconnect.mpris_b4a131bdb256412aac42c1f5a5b579d7;kdeconnect.mpris_b4bd42bf6bf448aa804dee35d2030f8a;kdeconnect.mpris_b5823be04ba149d380c57ef2f9ca0230;kdeconnect.mpris_b5bc50a0987745788835beed0cbf49c6;kdeconnect.mpris_b6f33b599061457bbbc52293fcb84f6a;kdeconnect.mpris_b77b376c7db54681bd5612f86002ad6b;kdeconnect.mpris_b788e653e89e41f0a75491bd9356bbe7;kdeconnect.mpris_b7bd37042c80431781ea416027ed64ba;kdeconnect.mpris_b7cffaf12f954ff280070657841e0df8;kdeconnect.mpris_b7f4f67c23ed4362bb3f874784f987f4;kdeconnect.mpris_b829bdd437424917b6c2e23bd4562581;kdeconnect.mpris_b866510a523d4a6ebae95081ccdceda0;kdeconnect.mpris_b8c248e3c9474f0d831c53be502c7c1d;kdeconnect.mpris_b8ff055523814cc492069c688339fc14;kdeconnect.mpris_b9b7f057a15243b5b86340ec09613792;kdeconnect.mpris_b9bf956fd0e84b55a59e4a6ef7bdd846;kdeconnect.mpris_ba662d0eb68c4b438834f7d4432b7c2b;kdeconnect.mpris_ba68ef01c4ff4d8da8951ca9a23a1284;kdeconnect.mpris_ba77da4252de4373961285d0f0933fea;kdeconnect.mpris_baa981a97bc94b1b890ac15806c9d380;kdeconnect.mpris_bb8b88c638204f93859e0e5bc3fb12cf;kdeconnect.mpris_bc07c0aec9624e18a6f5f40441481271;kdeconnect.mpris_bc11cdac90ce4427821128c9c5af3760;kdeconnect.mpris_bc55a4ff677648a4adf07760fe9795e0;kdeconnect.mpris_bc9299fd653047ad9b9fee685ef4aef5;kdeconnect.mpris_bcaf9a2de4474cd6aad9b5fe2b7fbbb6;kdeconnect.mpris_bcb3fcba8886461aa6b1e0da15ee69b2;kdeconnect.mpris_bd22c15819a24219b8292bb7ece99cd2;kdeconnect.mpris_bd24fc131ad745d09f3780b22395c1c3;kdeconnect.mpris_bd75ce971c8c450da08aa5ece67fcddc;kdeconnect.mpris_bd8cf49011a24c959601f5fbf72cb9f0;kdeconnect.mpris_bdcd5dc9ccac4f9c8976a9bc96b51897;kdeconnect.mpris_bdd74d5dcba745f8b5a69b30b7bc2e08;kdeconnect.mpris_be17103c8d9b48dba434e165f30c293a;kdeconnect.mpris_be22166e67324e04b102d47c2b45de2f;kdeconnect.mpris_be28cd684ea643f39b83078fa842cc50;kdeconnect.mpris_be56bea5409c44d392a30e45f2306d6b;kdeconnect.mpris_bed23116b44b4141adcd874d2fdbcf35;kdeconnect.mpris_befb0f3ecc9d4d24a0700ccecf81d631;kdeconnect.mpris_bf7a62d2d69645e3b3fec1664a53746a;kdeconnect.mpris_bf8d93d668fb4043945565710f1d4477;kdeconnect.mpris_c07220cb190d4d5ea8e75b0c9ac7f1c2;kdeconnect.mpris_c09a5872fcfa44cc867f55507117fb9a;kdeconnect.mpris_c0b29858e7ff446a9c8936c46c3bf463;kdeconnect.mpris_c0febdcbcf974a34bc0e49151fd850dd;kdeconnect.mpris_c113dba87a354f5c89a82d1f9cbafe29;kdeconnect.mpris_c131fe2b231c4dbd9a66683ef53f406b;kdeconnect.mpris_c2262c259238475c90b99ced00e8704e;kdeconnect.mpris_c25c7966f7d84f94b77b0e9aecb7233f;kdeconnect.mpris_c28983273d344c88a194cde47ece06d1;kdeconnect.mpris_c2a61d83e01241b3bd8f2dfcd059ea81;kdeconnect.mpris_c2bf3d7fab1e4d43a53179e045936a7c;kdeconnect.mpris_c2f809d516dc46b5a390f22aa4e738eb;kdeconnect.mpris_c340c3f9bc554cd383edaa1957807936;kdeconnect.mpris_c3abaae364e346f486e1f7720bb9fd22;kdeconnect.mpris_c46e327439ea434697e0f294691db1e0;kdeconnect.mpris_c47a681eb5a64a38bdd41eda59862f92;kdeconnect.mpris_c48ac79f2a224b7d880bcf7c2376e987;kdeconnect.mpris_c4d8849b8237432d84546f5b8d82d3a3;kdeconnect.mpris_c521d2ae97f04ccebbb7b9681749d824;kdeconnect.mpris_c540dff86d204a62ac8221d3c6e81fbb;kdeconnect.mpris_c556ab8e2da442c9818c59e8df97591d;kdeconnect.mpris_c6373bcf2d1f412590549af5396a3a84;kdeconnect.mpris_c63b629830d54fd38f96606e2628725b;kdeconnect.mpris_c6477038d8814ec59ebd49fdeb70ba17;kdeconnect.mpris_c679636c175e4e2395e1ef5f55c0ba9a;kdeconnect.mpris_c71934820a774c4e822aa3a7ddbfe694;kdeconnect.mpris_c72a8631f7b0404c8937015510564ed6;kdeconnect.mpris_c7576f73d64142389582160056be1bfc;kdeconnect.mpris_c819de839f0f4d459eefaa8b951ea065;kdeconnect.mpris_c8433520a815413e9cf07105ce33b99b;kdeconnect.mpris_c847be2d76364348bff38ca4ed26ee79;kdeconnect.mpris_ca203cb3864b413bb757c63aa3e664b5;kdeconnect.mpris_cad7bb08958446e192437d3b95776767;kdeconnect.mpris_cadb869d72924ad8a669aecfbf45d514;kdeconnect.mpris_cafe90f5821641e68cbbfc5db4df66e7;kdeconnect.mpris_cb25870e6afe4285af7d6dcd8a0b36f2;kdeconnect.mpris_cb506a9a6fb74a099d440207725c4fe0;kdeconnect.mpris_cbaa1018d9634fc6b17a20dba95d412d;kdeconnect.mpris_ccc97e16195a42a4b5f87dc24953576c;kdeconnect.mpris_cd20af626d894cadbb5f5f4199fb98ff;kdeconnect.mpris_cd6b085df5b6440cade6507dcc473156;kdeconnect.mpris_cd7bf82323a94d1eb16842b6acd1cdfb;kdeconnect.mpris_cdd4ca316be54fd69474d3dd2e8d481a;kdeconnect.mpris_ce493b9e7be94d45a78fb6e20d6ec27f;kdeconnect.mpris_ce711d9acf7148abaf1204e525bb339b;kdeconnect.mpris_ceebedccdc2d4a4fad19e3f206faa6cb;kdeconnect.mpris_cf2c34a3127148ec86f221792135bba8;kdeconnect.mpris_d16aa380e1074a4d8a67a34716b6568b;kdeconnect.mpris_d19cc11674414bbf9ee35b40f72a4bab;kdeconnect.mpris_d1afe4909c4843f3a3206d7c8eb28bbf;kdeconnect.mpris_d2203b8fb19542dcaf98a89cac234d27;kdeconnect.mpris_d3270fee6d034862ba4bd8b8de80caaa;kdeconnect.mpris_d33a3111c7b94c0f9fb7ed5321c90b26;kdeconnect.mpris_d358b41c9df948c881d6f66a896d9cd9;kdeconnect.mpris_d390d8952caf4c5abbde7008dc6ee3b2;kdeconnect.mpris_d3a077ef2d264ec5af30bb8fae7e2d9d;kdeconnect.mpris_d3af80f2e36249018774b418016fdecd;kdeconnect.mpris_d46ae61db8194082bb1225d53b4191b8;kdeconnect.mpris_d497e1168dc847cbbf50c318e71abac4;kdeconnect.mpris_d4e06a82ab314c868268ec6b1b3d8580;kdeconnect.mpris_d4ff906eb60d471f8bd571f9e008e43f;kdeconnect.mpris_d5b59ad38cb3424c8c2fff98b681699c;kdeconnect.mpris_d5e17671052e44a9a115e42cdafe49e5;kdeconnect.mpris_d5eca995e21f4246939041ea69008d93;kdeconnect.mpris_d5f92fc94f97414a9ba2c856fcd9ef8c;kdeconnect.mpris_d667564741d84570aeedbf8eb2d444fa;kdeconnect.mpris_d6dcdaa3fcef4d42964aa565ece268e6;kdeconnect.mpris_d82624a414604c1fa15301f6df4c17a4;kdeconnect.mpris_d87d2b34b0294831a70238227ca5a997;kdeconnect.mpris_d895dfea4c5545d493b904e8263652ef;kdeconnect.mpris_d8e4765c883c4018bfcca055adadd0ba;kdeconnect.mpris_d9130f09b52c4b85a7ea125933c8b0ae;kdeconnect.mpris_d94464230e0247d2abfe41063348e6af;kdeconnect.mpris_d9efd8bede624e2f81f56f7c1b802410;kdeconnect.mpris_d9f8811736944e68bd120cc8d0ffca45;kdeconnect.mpris_da082bdd0c2f440a83118c5aa5bbf3ea;kdeconnect.mpris_da0ba97a6a344e638f0c3506b9c6e2ea;kdeconnect.mpris_da55f83e01084ba18c493ac000e4ac1b;kdeconnect.mpris_da7ef9a5e5314faab5e53064e322e8db;kdeconnect.mpris_dab98f140d15421fbb1d4ae974561df6;kdeconnect.mpris_dad5a3361a59407594b63b33f49ce77c;kdeconnect.mpris_db2dd6d5e8b74032901ae2e5b9a93411;kdeconnect.mpris_dc06c71029974f7e97ee0b1bb58f87c7;kdeconnect.mpris_dc57644a338345d4ab544bbdb5b79c16;kdeconnect.mpris_dca1a3b5852047cb9783a8ecb9563eeb;kdeconnect.mpris_dce45d2122084146a9ec4b7e438cad03;kdeconnect.mpris_dd1604f2acbe47d29ad0754f27ccb126;kdeconnect.mpris_dd5ec2e67b554d3491ef5d124c821046;kdeconnect.mpris_dd86e41238124e589a9991fdd47454c9;kdeconnect.mpris_de12c56664a64eb5b73e39c6042fef04;kdeconnect.mpris_de3e082294d2499ba38df98860af4dab;kdeconnect.mpris_df216831b8914fcc9374888b612849aa;kdeconnect.mpris_df46ef44522d4fbd82baa78c5f0b9054;kdeconnect.mpris_df8bcbe262db4c0eb2ad2f9ed440e3f9;kdeconnect.mpris_df901d320b7a415c9ca4aa4de0a14fbb;kdeconnect.mpris_e1006db49ad644148435ea60de246c53;kdeconnect.mpris_e1217e7d9bb3494e94a83faab787806f;kdeconnect.mpris_e15b594255b948308eb2f48bb3da5a0e;kdeconnect.mpris_e225c8b38dec44ff94cee61632c027a9;kdeconnect.mpris_e2487da0441a4a0a803c32914dccc8a5;kdeconnect.mpris_e25c56cc2b884a0bb46c7c456f61df73;kdeconnect.mpris_e3f0467b06574e98881b57857fd14d31;kdeconnect.mpris_e400a116a3df4b52b125286b015d9fe6;kdeconnect.mpris_e461bd8d53af48a0a748fc6e119f5368;kdeconnect.mpris_e48c92d5396240299b9d3c1309b6f4c4;kdeconnect.mpris_e4b7509a65bf4264981b420427637202;kdeconnect.mpris_e4f0148da06d4ef4916b3a5bcbc42f06;kdeconnect.mpris_e55d0856ebb842738bce0f25c6e0c901;kdeconnect.mpris_e6013f60a3fe4da58b234567c077158c;kdeconnect.mpris_e6745fa384a54c108b101321bab67825;kdeconnect.mpris_e678f62c849141189dd9133b054a413e;kdeconnect.mpris_e6a67672419345028a7e15b7d0058e14;kdeconnect.mpris_e86827fb40554702a895436f72d78ddd;kdeconnect.mpris_e8e21fb1844d45b2bc4ccdb22d8b45a6;kdeconnect.mpris_e90e16cf23514ce7a89127ca786596c1;kdeconnect.mpris_e94702a5216d48d194b0fe36514207b8;kdeconnect.mpris_e9fad677092349048d6d1d23ac5354dd;kdeconnect.mpris_ea892347297e4d3da9acfdb86554249f;kdeconnect.mpris_ec6a509823444f64890be166c0acc6d3;kdeconnect.mpris_ec803bfa1d8f4c6fb9afa91309a17788;kdeconnect.mpris_ecbd0f2fb86e43e389408bf7fe1ee851;kdeconnect.mpris_ed8662c3645f4f43976f2f6ef2066f12;kdeconnect.mpris_ee488be5afc24a26a252bbb9bb4bd049;kdeconnect.mpris_ee758c3d9c5a4cd9979447b8f27ac153;kdeconnect.mpris_eeb8bfeccc504e1291d6102b8263eb37;kdeconnect.mpris_ef04dae3641a42bebfd0ae9355fa6b29;kdeconnect.mpris_ef52f8eb4b2742289f681dd636c23104;kdeconnect.mpris_ef5b3af8bce74894a795ce1e988a814d;kdeconnect.mpris_f02574e0d96a423ea54b9e3100637329;kdeconnect.mpris_f03f9004c38c460ab17de73c375774ba;kdeconnect.mpris_f055069913a44969a5dfcb47db2de819;kdeconnect.mpris_f0d1d9b6fb2e4f389b88af2da833b483;kdeconnect.mpris_f10f512eec8a4699a7ee8526b927e678;kdeconnect.mpris_f115f9a7d03c4caeac444dc6e2eb4755;kdeconnect.mpris_f14ce23b8fe64bc4a33360c61364443a;kdeconnect.mpris_f16dcb21e499455e8a524f25989097ea;kdeconnect.mpris_f181a924815c4a37ac6758163d76add7;kdeconnect.mpris_f1b7e3a82a2048de926937066de47675;kdeconnect.mpris_f214c0e21f964bd5a9037a3c539fd73d;kdeconnect.mpris_f2db066dc5d84dea9572089d2b058226;kdeconnect.mpris_f3db4c82683349e0ab98d01b881d174a;kdeconnect.mpris_f4257e509a18431894b2f97edcc30f32;kdeconnect.mpris_f438663a377f467a85d939800fe94acd;kdeconnect.mpris_f442983db92c428dbc7b50a00411eff9;kdeconnect.mpris_f4cc53792e994fe3b724616e6c7d6241;kdeconnect.mpris_f4f9597cd900477f849a5eeb45b29f2b;kdeconnect.mpris_f54882b66c4f49fc87d2c5f0fa8ae192;kdeconnect.mpris_f5ece4100f414f72aa0072eee22508ae;kdeconnect.mpris_f650bf15701243ccbd075e565098906d;kdeconnect.mpris_f6ea11d028a04d32931d9fd80c0ab6b0;kdeconnect.mpris_f6f918c38c8e4ddd82dfdecb2d1f1dea;kdeconnect.mpris_f6fc9adb7d4b4ee088f69951e0ab7ebd;kdeconnect.mpris_f73705a1db754d52afa65c8f7d0f7fe2;kdeconnect.mpris_f74da236f6e84c84ad328908e4f85963;kdeconnect.mpris_f870da0b1fbf4d0692e70bf7cf1bc432;kdeconnect.mpris_f87cc07a54ea4d91b26e2bf288c8382c;kdeconnect.mpris_f8855d496711409fb84a74e7e57bccae;kdeconnect.mpris_f8d02606074649279d2ebca7f93b8a3e;kdeconnect.mpris_f90b8bd7f2314b6283a050f503bc0fea;kdeconnect.mpris_f9fbdf8ef7c84e8dbfe59498c0c8be68;kdeconnect.mpris_fa379f10e42a4f688a800e5b0950083d;kdeconnect.mpris_fb985f0ad70d473eaaa9267ee0ddcdb1;kdeconnect.mpris_fc67663d0009482c9e6c41efc451cfae;kdeconnect.mpris_fc8936d6cbaf457cad0146fa3182e7e0;kdeconnect.mpris_fced00b2f5a743c0a0da4df7cf5711c5;kdeconnect.mpris_fcef71a6dea340d8aa375afdb2399cb3;kdeconnect.mpris_fd85baa9cad24b2187919b5b9c2bcca2;kdeconnect.mpris_fd887585d7294302a53b53a35607245f;kdeconnect.mpris_fd9df438f6e54d40b337f27c34fe0e68;kdeconnect.mpris_fde84dcdfb9b48f0953a11b0305e7818;kdeconnect.mpris_fe21090b78a7469497336333556a75b8;kdeconnect.mpris_fe3fdbf6f9194d189a172654683fe24a;kdeconnect.mpris_fe98c7117b264364bf907ee27a58fab0;kdeconnect.mpris_ff1b486df30b499fa12f64598192dab0;kdeconnect.mpris_ffa7569a07bc438e855961ac46bfdc7d;Lollypop;museeks;strawberry;tdesktop"/>
+    </property>
+    <property name="plugin-14" type="string" value="cpugraph"/>
+    <property name="plugin-16" type="string" value="systemload">
+      <property name="timeout" type="uint" value="700"/>
+      <property name="cpu" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="swap" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="memory" type="empty">
+        <property name="color" type="array">
+          <value type="double" value="0.207843"/>
+          <value type="double" value="0.517647"/>
+          <value type="double" value="0.894118"/>
+          <value type="double" value="1.000000"/>
+        </property>
+        <property name="enabled" type="bool" value="true"/>
+        <property name="label" type="string" value="ram"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="color" type="array">
+          <value type="double" value="0.200000"/>
+          <value type="double" value="0.819608"/>
+          <value type="double" value="0.478431"/>
+          <value type="double" value="1.000000"/>
+        </property>
+      </property>
+    </property>
+    <property name="plugin-18" type="string" value="genmon"/>
+    <property name="plugin-19" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-17" type="string" value="genmon"/>
+    <property name="plugin-21" type="string" value="genmon"/>
+    <property name="plugin-22" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-23" type="string" value="genmon"/>
+    <property name="plugin-26" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-27" type="string" value="genmon"/>
+    <property name="plugin-28" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
 </channel>

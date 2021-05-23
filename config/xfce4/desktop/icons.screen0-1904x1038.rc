@@ -1,12 +1,20 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[/home/koutsie/Desktop/steam.desktop]
+row=4
+col=0
+
 [7e507532-f196-4c58-a1db-eba1ac358933]
 row=0
 col=0
 
 [A180-41C4]
 row=1
+col=0
+
+[7b11c079-803c-4760-a153-fafc268409ac]
+row=5
 col=0
 
 [/]

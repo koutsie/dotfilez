@@ -1,16 +1,9 @@
-![pfetch](https://raw.githubusercontent.com/koutsie/dotfilez/master/github-images/pfetch.png)
-
-![busy](https://github.com/koutsie/dotfilez/raw/master/github-images/busy.png)
-
 [![Hits-of-Code](https://hitsofcode.com/github/koutsie/dotfilez)](https://hitsofcode.com/github/koutsie/dotfilez/view)
-
-
-[![HitCount](http://hits.dwyl.com/koutsie/dotfilez.svg)](http://hits.dwyl.com/koutsie/dotfilez)
 
 
 # dotfilez
 
-Updated dotfiles this time with sowm, openbox, qtile, i3 etc etc
+Updated (and outdated) dotfiles this time with sowm, openbox, qtile, i3 etc etc
 
 
 
@@ -19,21 +12,11 @@ Install deps:
 
 ```yay -S flameshot redshift imagemagick bash pamixer wget curl mps-youtube dunst git feh imlib2 sed screen kdeconnect-git openbox obconf obmenu-generator```
 
-##### obmenu-generator 
-
-**Required dependencies:**
-
-> perl>=5.14.0
-
-> gtk2-perl (Gtk2)
-
-> perl-data-dump (Data::Dump)
-
-> perl-linux-desktopfiles>=0.25 (Linux::DesktopFiles)
+**and many many more... list outdated by like 2 years**
 
 
 Install dotfilez:
-
+NOTE: THE INSTALLER IS VERY VERY VERY OUT OF DATE, PLEASE PICK AND CHOOSE MANUALLY RATHER THAN USE THE INSTALLER!
 ```curl -fsSL https://raw.githubusercontent.com/koutsie/dotfilez/master/Installer%20v2/install.sh | bash```
 
 ### Notes:
@@ -66,17 +49,18 @@ Install dotfilez:
 - redshift
 - kdeconnect
 - polybar
-
+**I STOPPED LISTING ALL THE PROGRAMS BECAUSE THERE ARE TOO MANY, PLEASE SEE MANUALLY AND ASK RATHER THAN TRUST THIS LIST!**
 
 ## Installs configs, not enabled by default:
 - i3
 - polybar
+**FUCK**
 
 
 
 ## Default Layout
 ![Layout](./docs/dotfilez-layout.jpg)
-
+**OUTDATED**
 
 *NOTE: default modifier is __Super__*
 
@@ -116,10 +100,11 @@ Install dotfilez:
 
 ## Editors:
 For nano: https://github.com/scopatz/nanorc
-
+**ALSO VERY VERY OUTDATED**
 For geany: `tango light` with `sourcecode variable bold`
 
 
 # based software
+**STILL BASED**
 https://github.com/cylgom/ly/
 

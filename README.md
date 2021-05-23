@@ -1,11 +1,10 @@
-[![Hits-of-Code](https://hitsofcode.com/github/koutsie/dotfilez)](https://hitsofcode.com/github/koutsie/dotfilez/view)
-
 
 # dotfilez
+[![Hits-of-Code](https://hitsofcode.com/github/koutsie/dotfilez)](https://hitsofcode.com/github/koutsie/dotfilez/view)
+![desktop](https://user-images.githubusercontent.com/18449778/119275857-1ad3de00-bc20-11eb-903f-ce61999346dc.png)
+![busy](https://user-images.githubusercontent.com/18449778/119275856-19a2b100-bc20-11eb-97d4-d032872f1062.png)
 
 Updated (and outdated) dotfiles this time with sowm, openbox, qtile, i3 etc etc
-
-
 
 ## install:
 Install deps:

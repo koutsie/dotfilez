@@ -1,0 +1,6 @@
+Command=/home/koutsie/cpu.sh
+UseLabel=1
+Text=CPU:\ 
+UpdatePeriod=15000
+Font=Sans 10
+

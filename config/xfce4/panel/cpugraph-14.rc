@@ -1,0 +1,17 @@
+UpdateInterval=3
+TimeScale=0
+Size=16
+Mode=3
+Frame=1
+Border=0
+Bars=1
+PerCore=1
+TrackedCore=0
+InTerminal=1
+StartupNotification=0
+ColorMode=0
+Foreground1=rgb(0,0,0)
+Foreground2=rgb(224,27,36)
+BarsColor=rgb(255,255,255)
+PerCoreSpacing=2
+

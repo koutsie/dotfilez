@@ -1,0 +1,6 @@
+Command=/home/koutsie/ping.sh
+UseLabel=1
+Text=Ping:\ 
+UpdatePeriod=20000
+Font=Sans 10
+

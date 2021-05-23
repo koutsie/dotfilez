@@ -1,0 +1,6 @@
+Command=/home/koutsie/packetloss.sh
+UseLabel=1
+Text=Packet Loss:\ 
+UpdatePeriod=90000
+Font=Sans 10
+

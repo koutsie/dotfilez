@@ -1,0 +1,6 @@
+Command=/home/koutsie/covid.sh
+UseLabel=1
+Text=Covid-19 Cases:\ 
+UpdatePeriod=180000
+Font=Sans 10
+

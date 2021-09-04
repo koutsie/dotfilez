@@ -1,5 +1,6 @@
 
-# dotfilez
+
+# 🖥️💻 dotfilez
 ![Lines of code](https://img.shields.io/tokei/lines/github/koutsie/dotfilez)
 [![Hits-of-Code](https://hitsofcode.com/github/koutsie/dotfilez)](https://hitsofcode.com/github/koutsie/dotfilez/view)
 ![GitHub search hit counter](https://img.shields.io/github/search/koutsie/dotfilez/lazy)

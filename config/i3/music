@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+good=$(playerctl status)
+
+if [[ $good = "No players found" ]]; then
+    exit 1
+fi
+
+sleep 0.2
+
+if [[ $good = "No player could handle this command" ]]; then
+    exit 1
+fi
+
+sleep 0.2
+
+set +e
+
+player_status=$(playerctl status 2> /dev/null)
+metadata="%{T4}$(playerctl metadata artist) - $(playerctl metadata title)"
+if [[ $player_status = "Playing" ]]; then
+    echo "%{T4}%{F#FFFFFF}$metadata%{F-}"
+elif [[ $player_status = "Paused" ]]; then
+    echo "%{T4}%{F#999}$metadata%{F-}"
+else
+    echo "%{T4}%{F#999}$metadata%{F-}"
+fi

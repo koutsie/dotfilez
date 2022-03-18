@@ -1,0 +1,37 @@
+#XTux config file
+name koutsie
+character TUX
+movemode NORMAL
+mousemode 0
+netstats recent
+debug off
+color1 13
+color2 6
+crossrad 80
+turnrate 4
+#screen dimensions (1088,512)
+x_tiles 17
+y_tiles 8
+ep_expire 60
+#KEY CONFIG
+left Left
+right Right
+forward Up
+back Down
+s_left z
+s_right x
+b1 space
+b2 Control_R
+weap_up Control_L
+weap_dn Alt_L
+sniper Shift_L
+screenshot minus
+ns_toggle F1
+rad_dec minus
+rad_inc equal
+textmode Return
+suicide F5
+show_frags Tab
+mbutton1 6
+mbutton2 9
+mbutton3 8

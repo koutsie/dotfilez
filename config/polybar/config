@@ -1,92 +1,200 @@
-[bar/mini]
-modules-center =  weatherz paddingline date paddingline cpufreq paddingline cpu paddingline cputemp paddingline memory
-modules-left =  menu-apps pulseaudio paddingline title
-modules-right = 
-bottom = true
-background = #F39A27
-#background = ${colors.trans}
-foreground = #000
-tray-background = ${root.background}
-cursor-click = pointer
-cursor-scroll = ns-resize
-#tray-background = ${colors.grey-9}
-tray-position = right
-tray-maxsize = 16
-tray-padding = 3
-tray-detached = false
-override-redirect = true
-module-margin = 1
-font-0 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-1 = Noto Sans Symbols2:pixelsize=8;1
+[bar/i3wmthemer_bar]
+width = 100%
+# setting this with 80% width will center the bar: offset-x = 10%
+height = 27
+radius = 0
 fixed-center = true
 
-[module/paddingline]
-type = custom/text
-content = |
+background = #2B2A33
+foreground = #c5c8c6
 
-[module/cpu]
-type = internal/cpu
-label = CPU: %percentage%%
-interval = 10
+line-size = 3
+line-color =
+
+border-size = 0
+border-left-size =
+border-right-size =
+border-color =
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Source Code Pro Semibold:size=10;1"
+font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
+font-2 = "Font Awesome 5 Brands:size=10;1"
+font-3 = "HanaMinA,花園明朝A:size=10;1"
+
+# HEY YOU, YOUR MODULES ARE HERE - STOP BEING BIG DUMB
+modules-left = eth i3 cput updates
+modules-center = news #music
+modules-right = powermenu date
+
+tray-position = right
+tray-maxsize = 24
+;tray-padding =
+wm-restack = i3
+override-redirect = true
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 2
+label-mode-foreground = #1E1E20
+label-mode-background = #e39866
+
+label-focused = %index%
+label-focused-background = #dc7f41
+label-focused-foreground = #1E1E20
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-background = #e39866
+label-unfocused-foreground = #1e1e20
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-background = #e39866
+label-visible-foreground = #1E1E20
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-background = #BA2922
+label-urgent-padding = 2
+
+[module/wlan]
+type = internal/network
+interface = net1
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-foreground = #e6a57a
+format-connected-background = #1e1e20
+format-connected-padding = 1
+label-connected = %essid%
+
+format-disconnected =
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = #1E1E20
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+format-connected-padding = 1
+format-connected-foreground = #1e1e20
+format-connected-background = #C6723A
+format-connected-prefix = " "
+format-connected-prefix-foreground = #fffff
+label-connected = %downspeed:9%
+format-packetloss = <animation-packetloss> <label-connected>
+label-disconnected = no network / vpn
+label-disconnected-foreground = #2B2A33
+
+animation-packetloss-0 = ⚠
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 📶
+animation-packetloss-1-foreground = #000000
+; Framerate in milliseconds
+animation-packetloss-framerate = 500
+
 
 [module/date]
 type = internal/date
+interval = 1
+
+date =
+date-alt = " %Y-%m-%d"
+
 time = %H:%M:%S
-label = %time% 
+time-alt = %H:%H
 
-[module/weatherz]
+format-prefix = 
+format-foreground = #1e1e20
+format-background = #c6723a
+format-padding = 2
+
+label = %date% %time%
+
+[module/music]
 type = custom/script
-exec = "curl -s wttr.in/oulu?format=3"
-interval = 720
-
-[module/cputemp]
-type = custom/script
-# Laptop: sensors | grep -oP 'Tdie.*?\+\K[0-9.]+'
-# PC: sensors | grep -oP 'Core 0.*?\+\K[0-9.]+'
-exec = "temp=$(sensors | grep -oP 'Tdie.*?\+\K[0-9.]+') && echo $temp°C"
-interval = 10
-
-
-
-
-[module/cpufreq]
-type = custom/script
-exec = freq=$(grep 'cpu MHz' /proc/cpuinfo | head -1 | awk -F: '{print $2/1024}' | rev | cut -c 3- | rev) && echo $freq GHz
-interval = 7
-
-
-[module/memory]
-type = internal/memory
-format = RAM: <label>
 interval = 5
 
-[module/title]
-type = internal/xwindow
+label = %output%
+exec = ~/.config/i3/music
+foreground = #c5c8c6
 
-[module/pulseaudio]
-type = internal/pulseaudio
-format-volume = <ramp-volume> <label-volume>
-label-muted = 🔇 muted
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
-click-right = pavucontrol &
+format-padding = 1
 
+[module/cput]
+type = custom/script
+interval = 8
 
-[module/menu-apps]
+label = %output%
+exec = ~/.config/i3/cput
+foreground = #c5c8c6
+
+[module/powermenu]
 type = custom/menu
+
 expand-right = true
+
 format-spacing = 1
+
+label-open = 
+label-open-foreground = #e39866
+label-close =  cancel
+label-close-foreground = #e39866
 label-separator = |
-label-open = [ Menu ]️
-label-close = [ Close ]
-menu-0-0 = [ -Social- ]
+label-separator-foreground = #e6a57a
+
+menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
-menu-0-1 = [ -Games- ]
+menu-0-1 = power off
 menu-0-1-exec = menu-open-2
-menu-1-0 = ( Discord )
-menu-1-0-exec = discord &
-menu-1-1 = ( Mirage )
-menu-1-1-exec = mirage &
-menu-2-0 = ( CS:GO )
-menu-2-0-exec = xdg-open://steam://rungameid/730 &
+menu-0-2 = log off
+menu-0-2-exec = menu-open-3
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = reboot
+
+menu-2-0 = power off
+menu-2-0-exec = poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+menu-3-0 = log off
+menu-3-0-exec = i3 exit logout
+menu-3-1 = cancel
+menu-3-1-exec = menu-open-0
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; [module/news]
+include-file = ~/.config/polybar/scripts/news/conf/module.conf
+
+[module/updates]
+type = custom/script
+exec = /home/koutsie/.config/polybar/scripts/updates/updates-pacmanaur.sh
+interval = 600
